@@ -1,0 +1,67 @@
+html {
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/background.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  clear: none;
+}
+
+body {
+  background: transparent;
+}
+
+.toggle {
+  color: gray;
+  position: relative;
+}
+
+.choices {
+  color: white;
+  font-weight: bold;
+}
+
+#container {
+  width: 100%;
+  display: block;
+  margin-top: 6em;
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+}
+
+#interface {
+  margin-top: 1em;
+}
+
+#continue {
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  float:right;
+}
+
+#grade {
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  float:right;
+}
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+  color: white;
+  background: transparent;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+}
