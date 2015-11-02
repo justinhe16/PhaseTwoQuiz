@@ -1,3 +1,4 @@
+
 var quiz = null;
 $.ajax({
     url: "js/quiz.json",
@@ -6,7 +7,8 @@ $.ajax({
         quiz = $.parseJSON(data);
         console.log(quiz);
     }
-})
+});
+
 var tracker = -1; //keeps track of the question you're on. starts at -1 because front page
 var username = ""; //self explanatory
 var soundOn = true; //keeps track of sound toggle
@@ -160,12 +162,28 @@ $("#imagetoggle").click(function() {
     $("#container").on("click", "#grade", function(){ //grading function (occurs when submit is pressed in the last question)
         saveAnswer(); 
         var grade = gradeQuiz(); //calls gradeQuiz function
+        var gradeArray = gradeQuizArrayReturned(); //call gradeQuizArrayReturned
+        var myJsonString = JSON.stringify(quiz);
+        console.log(myJsonString);
+        var myRealJsonString = JSON.parse(myJsonString);
+        console.log(myRealJsonString);
+
+        //sends a post request to the server
+        $.ajax({
+          method: "POST",
+          url: "/quiz",
+          data: myRealJsonString
+        })
+          .done(function(msg) {
+            console.log( "Data Saved: " + msg );
+          });
+
         $("#container").empty();
         $("#container").append("<h2>Hi " + username + "! Congratulations on completing that quiz. You scored " + grade + " out of " + (quiz.questions.length) + " correct.</h2>").hide().fadeIn(1000);
         //making HTML
 
         // pie graph making ... rough. made with extensive research on w3schools and dervied from http://wickedlysmart.com/how-to-make-a-pie-chart-with-html5s-canvas/
-        var data = [((grade)/(quiz.questions.length))*360, ((grade - quiz.questions.length)/(quiz.questions.length))*360];
+        var data = [((grade)/(quiz.questions.length))*360, ((quiz.questions.length - grade)/(quiz.questions.length))*360];
         var labels = ["correct","wrong"];
         var colors = ["#33CC33","#CC0000"];
         $("#container").append("<br><br><br><center><canvas id=\"piechart\" width=\"250\" height=\"250\"> This text is displayed if your browser does not support HTML5 Canvas.</canvas><center>");
@@ -174,7 +192,6 @@ $("#imagetoggle").click(function() {
         for (var i = 0; i < data.length; i++) {
         drawSegment(canvas, context, i, data, colors, labels);
         }
-
     });
 });
 
@@ -257,12 +274,31 @@ function saveAnswer() { //when you click next, answer choices saved to an array 
 function gradeQuiz() { //compares the answer array to json's correct answers.
     var questionsRight = 0;
     for (var x = 0; x < currentAnswers.length; x++) {
-        if (currentAnswers[x] == quiz.questions[x]["correct-answer"]){
+        if (currentAnswers[x] == quiz.questions[x]["correct_answer"]){
             questionsRight++;
-            console.log(currentAnswers[x]);
+            console.log("Water" + currentAnswers[x]);
         }
     }
     return questionsRight;
+}
+
+
+function gradeQuizArrayReturned() {
+    var questionsRightArray = [];
+    for (var x = 0; x < currentAnswers.length; x++) {
+        if (currentAnswers[x] == quiz.questions[x]["correct_answer"]){
+            questionsRightArray[x] == '1';
+            quiz.questions[x]["global_correct"]++;
+            console.log("water2" + questionsRightArray);
+        }
+        else {
+            questionsRightArray[x] == '0';
+            console.log("water3" + questionsRightArray);
+        }
+    quiz.questions[x]["global_total"]++;
+    console.log(quiz);
+    }
+    return questionsRightArray;
 }
 
 function drawSegment(canvas, context, i, data, colors, labels) { //pie chart stuff

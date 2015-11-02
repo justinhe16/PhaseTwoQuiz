@@ -22,6 +22,16 @@ app.get('/', function(request, response) {
   response.render('index.html');
 });
 
+app.post('/quiz', function(request, response) {
+  var Tobestoredjson = JSON.stringify(request.body, null, 4);
+  console.log(Tobestoredjson);
+  fs.writeFile('./public/js/quiz.json', Tobestoredjson, function (err) {
+  if (err) throw err;
+  console.log('It\'s saved!');
+  });
+  response.send(Tobestoredjson + "fire");
+});
+
 // SERVER SETUP
 var server = require('http').Server(app);
 server.listen(PORT_NUMBER, function() {
