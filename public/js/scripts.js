@@ -8,6 +8,15 @@ $.ajax({
         console.log(quiz);
     }
 });
+var top10 = null;
+$.ajax({
+    url: "js/top10.json",
+    dataType: "text",
+    success: function(data) {
+        top10 = $.parseJSON(data);
+        console.log(top10);
+    }
+});
 
 var tracker = -1; //keeps track of the question you're on. starts at -1 because front page
 var username = ""; //self explanatory
@@ -44,7 +53,7 @@ $("#soundtoggle").click(function() {
 
 $("#imagetoggle").click(function() {
     if(imageOn == true) {
-        $("html").css("background-image","url('./assets/images/stillbackground.jpg')");
+        $("html").css("background-image","url('./assets/images/background2.jpg')");
         imageOn = false;
         $("#imagetoggle").css("color","red"); //gif toggle off
     }
@@ -72,6 +81,20 @@ $("#imagetoggle").click(function() {
             }
             $("#interface").append("<br>");
             $("#interface").append("<input id=\"continue\" class=\"btn btn-success btn-lg\" type=\"button\" value=\"Next\"></input>"); // all of this code creates dynamically new elements that we can use for questions
+////////////////////////////////////////////////////////////////////////
+        $.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+          {
+            tags: String(quiz.questions[tracker].meta_tags),
+            tagmode: "any",
+            format: "json"
+          },
+          function(data) {
+            $.each(data.items, function(i,item){
+              $("<br><img />").attr("src", item.media.m).appendTo("#interface");
+              if ( i == 0 ) return false;
+            });
+          });
+//////////////////////////////////////////////////////////////////////// calls the image from flickr to display onto page
         }
     });
 
@@ -86,6 +109,20 @@ $("#imagetoggle").click(function() {
                 tracker++;
                 $("#container").empty();
                 $("#container").append("<h2>Hi " + username + "! " + quiz.questions[0].text + "</h2>").hide().fadeIn(1000);
+////////////////////////////////////////////////////////////////////////
+        $.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+          {
+            tags: String(quiz.questions[tracker].meta_tags),
+            tagmode: "any",
+            format: "json"
+          },
+          function(data) {
+            $.each(data.items, function(i,item){
+              $("<br><img />").attr("src", item.media.m).appendTo("#interface");
+              if ( i == 0 ) return false;
+            });
+          });
+//////////////////////////////////////////////////////////////////////// calls the image from flickr to display onto page
                 $("#container").append("<div class=\"col-md-6 col-md-offset-3 radio choices\" id=\"interface\">");
                 for(i = 0; i < quiz.questions[0].answers.length; i++){
                     $("#interface").append("<input type=\"radio\" name=\"answer\">" + quiz.questions[0].answers[i] + "<br>");
@@ -110,6 +147,20 @@ $("#imagetoggle").click(function() {
                 tracker++;
                 $("#container").empty();
                 $("#container").append("<h2>Hi " + username + "! " + quiz.questions[tracker].text + "</h2>").hide().fadeIn(1000);
+////////////////////////////////////////////////////////////////////////
+        $.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+          {
+            tags: String(quiz.questions[tracker].meta_tags),
+            tagmode: "any",
+            format: "json"
+          },
+          function(data) {
+            $.each(data.items, function(i,item){
+              $("<br><img />").attr("src", item.media.m).appendTo("#interface");
+              if ( i == 0 ) return false;
+            });
+          });
+//////////////////////////////////////////////////////////////////////// calls the image from flickr to display onto page
                 $("#container").append("<div class=\"col-md-6 col-md-offset-3 radio choices\" id=\"interface\">");
                 for(i = 0; i < quiz.questions[tracker].answers.length; i++){
                     if (currentAnswers[tracker] == i) {
@@ -138,6 +189,20 @@ $("#imagetoggle").click(function() {
         tracker--;
         $("#container").empty();
         $("#container").append("<h2>Hi " + username + "! " + quiz.questions[tracker].text + "</h2>").hide().fadeIn(1000);
+////////////////////////////////////////////////////////////////////////
+        $.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+          {
+            tags: String(quiz.questions[tracker].meta_tags),
+            tagmode: "any",
+            format: "json"
+          },
+          function(data) {
+            $.each(data.items, function(i,item){
+              $("<br><img />").attr("src", item.media.m).appendTo("#interface");
+              if ( i == 0 ) return false;
+            });
+          });
+//////////////////////////////////////////////////////////////////////// calls the image from flickr to display onto page
         $("#container").append("<div class=\"col-md-6 col-md-offset-3 radio choices\" id=\"interface\">");
         for(i = 0; i < quiz.questions[tracker].answers.length; i++){
             if (currentAnswers[tracker] == i) {
@@ -178,9 +243,76 @@ $("#imagetoggle").click(function() {
             console.log( "Data Saved: " + msg );
           });
 
+        //retrieving the quiz again after posting to it
+        $.ajax({
+            url: "js/quiz.json",
+            dataType: "text",
+                success: function(data) {
+            quiz = $.parseJSON(data);
+            console.log(quiz);
+            }
+        });
+
         $("#container").empty();
         $("#container").append("<h2>Hi " + username + "! Congratulations on completing that quiz. You scored " + grade + " out of " + (quiz.questions.length) + " correct.</h2>").hide().fadeIn(1000);
         //making HTML
+
+        //making tables
+        $("#container").append("<center><table id='tabletobe' border='1' style='width: 90%'>");
+        $("#tabletobe").append("<tr><td>Questions</td><td>Total Correct</td><td>Total Answered</td><td>% of other players who answered correctly</td><td>The Correct Choice</td><td>Your Answer Choice</td></tr>");
+        for(var f=0; f<quiz.questions.length; f++){
+            $("#tabletobe").append("<tr><td>" + quiz.questions[f].text + "</td><td>" + quiz.questions[f].global_correct + "</td><td>" + quiz.questions[f].global_total + "</td><td>" + (100*(quiz.questions[f].global_correct/quiz.questions[f].global_total)) + "% </td><td>" + quiz.questions[f].answers[quiz.questions[f].correct_answer] + "</td><td>" + quiz.questions[f].answers[currentAnswers[f]] + "</td></tr>");
+        }
+
+        changetop();
+        var myJsonString2 = JSON.stringify(top10);
+        var myRealJsonString2 = JSON.parse(myJsonString2);
+        //sends a post request to the server for top 10
+        $.ajax({
+          method: "POST",
+          url: "/top",
+          data: myRealJsonString2
+        })
+          .done(function(msg) {
+            console.log( "Data Saved: " + msg );
+          });
+
+        //retrieving top10 after posting to it
+        $.ajax({
+            url: "js/top10.json",
+            dataType: "text",
+                success: function(data) {
+            top10 = $.parseJSON(data);
+            }
+        });
+
+        //making 2nd table for top 10
+        $("#container").append("<h2>Top 10 Users</h2>")
+        $("#container").append("<center><table id='tabletobe2' border='1' style='width: 90%'>");
+        $("#tabletobe2").append("<tr><td>Username</td><td>Score</td></tr>");
+        //selection sorting stuff
+        var greatesttoleast = [];
+        for(var d=0; d<top10.records.length; d++){
+            greatesttoleast[d] = d;
+        }
+        var max;
+        for(var b=0; b<greatesttoleast.length-1; b++){
+            max=b;
+            for (h=b+1; h < greatesttoleast.length; h++){
+                if (parseInt(top10.records[greatesttoleast[h]].score) > parseInt(top10.records[greatesttoleast[max]].score)){
+                    max = h;
+                }
+            }
+            if (max != b){
+              var tmp = greatesttoleast[b];
+              greatesttoleast[b] = greatesttoleast[max];
+              greatesttoleast[max] = tmp;  
+            }
+        }
+        //back to making tables
+        for(var e=0; e<10; e++){
+            $("#tabletobe2").append("<tr><td>" + top10.records[greatesttoleast[e]].user + "</td><td>" + top10.records[greatesttoleast[e]].score + "% </tr>");
+        }
 
         // pie graph making ... rough. made with extensive research on w3schools and dervied from http://wickedlysmart.com/how-to-make-a-pie-chart-with-html5s-canvas/
         var data = [((grade)/(quiz.questions.length))*360, ((quiz.questions.length - grade)/(quiz.questions.length))*360];
@@ -299,6 +431,14 @@ function gradeQuizArrayReturned() {
     console.log(quiz);
     }
     return questionsRightArray;
+}
+
+function changetop() {
+    var grade = gradeQuiz(); //calls gradeQuiz function
+    var cactus = top10.records.length;
+    var percentagegrade = (100*grade/quiz.questions.length);
+    var newelement = {'user':username, 'score':percentagegrade};
+    top10.records.push(newelement);
 }
 
 function drawSegment(canvas, context, i, data, colors, labels) { //pie chart stuff

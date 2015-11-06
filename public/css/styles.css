@@ -11,6 +11,12 @@ body {
   background: transparent;
 }
 
+table, th, td {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
 .toggle {
   color: gray;
   position: relative;

@@ -1,0 +1,54 @@
+{
+    "title": "Top10List",
+    "description": "for Space Quiz",
+    "records": [
+        {
+            "user": "NarutoYuen",
+            "score": "60"
+        },
+        {
+            "user": "David",
+            "score": "10"
+        },
+        {
+            "user": "Sammm",
+            "score": "30"
+        },
+        {
+            "user": "final",
+            "score": "20"
+        },
+        {
+            "user": "ok",
+            "score": "10"
+        },
+        {
+            "user": "swag",
+            "score": "90"
+        },
+        {
+            "user": "swag",
+            "score": "10"
+        },
+        {
+            "user": "ok",
+            "score": "30"
+        },
+        {
+            "user": "ok",
+            "score": "70"
+        },
+        {
+            "user": "tape",
+            "score": "100"
+        },
+        {
+            "user": "PLS",
+            "score": "0"
+        },
+        {
+            "user": "swagalicious",
+            "score": "60"
+        }
+    ]
+}

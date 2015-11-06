@@ -32,6 +32,16 @@ app.post('/quiz', function(request, response) {
   response.send(Tobestoredjson + "fire");
 });
 
+app.post('/top', function(request, response) {
+  var Tobestoredtopjson = JSON.stringify(request.body, null, 4);
+  console.log(Tobestoredtopjson);
+  fs.writeFile('./public/js/top10.json', Tobestoredtopjson, function (err) {
+  if (err) throw err;
+  console.log('It\'s saved!');
+  });
+  response.send(Tobestoredtopjson + "fire");
+});
+
 // SERVER SETUP
 var server = require('http').Server(app);
 server.listen(PORT_NUMBER, function() {
