@@ -1,7 +1,7 @@
 
 var quiz = null;
 $.ajax({
-    url: "js/quiz.json",
+    url: "/getquizJSON",
     dataType: "text",
     success: function(data) {
         quiz = $.parseJSON(data);
@@ -10,7 +10,7 @@ $.ajax({
 });
 var top10 = null;
 $.ajax({
-    url: "js/top10.json",
+    url: "/gettopJSON",
     dataType: "text",
     success: function(data) {
         top10 = $.parseJSON(data);

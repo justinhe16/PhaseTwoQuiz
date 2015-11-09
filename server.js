@@ -22,10 +22,21 @@ app.get('/', function(request, response) {
   response.render('index.html');
 });
 
+app.get('/getquizJSON', function(request, response) {
+  var b = require('./data/quiz.json');
+  response.send(b);
+});
+
+app.get('/gettopJSON', function(request, response) {
+  var a = require('./data/top10.json');
+  response.send(a);
+});
+
+
 app.post('/quiz', function(request, response) {
   var Tobestoredjson = JSON.stringify(request.body, null, 4);
   console.log(Tobestoredjson);
-  fs.writeFile('./public/js/quiz.json', Tobestoredjson, function (err) {
+  fs.writeFile('./data/quiz.json', Tobestoredjson, function (err) {
   if (err) throw err;
   console.log('It\'s saved!');
   });
@@ -35,7 +46,7 @@ app.post('/quiz', function(request, response) {
 app.post('/top', function(request, response) {
   var Tobestoredtopjson = JSON.stringify(request.body, null, 4);
   console.log(Tobestoredtopjson);
-  fs.writeFile('./public/js/top10.json', Tobestoredtopjson, function (err) {
+  fs.writeFile('./data/top10.json', Tobestoredtopjson, function (err) {
   if (err) throw err;
   console.log('It\'s saved!');
   });
