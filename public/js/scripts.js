@@ -1,13 +1,3 @@
-
-var quiz = null;
-$.ajax({
-    url: "/getquizJSON",
-    dataType: "text",
-    success: function(data) {
-        quiz = $.parseJSON(data);
-        console.log(quiz);
-    }
-});
 var top10 = null;
 $.ajax({
     url: "/gettopJSON",
@@ -17,7 +7,6 @@ $.ajax({
         console.log(top10);
     }
 });
-
 var tracker = -1; //keeps track of the question you're on. starts at -1 because front page
 var username = ""; //self explanatory
 var soundOn = true; //keeps track of sound toggle
@@ -64,14 +53,22 @@ $("#imagetoggle").click(function() {
     }
 });
 
-    $("#continue").click(function() { //This function is for the Begin button on the 1st page. The reason this needs its own seperate function is because the 1st question doesn't have a back button (also a thing with the plain, html button not having dynamic abilites)
+    $(".continue").click(function() { //This function is for the Begin button on the 1st page. The reason this needs its own seperate function is because the 1st question doesn't have a back button (also a thing with the plain, html button not having dynamic abilites)
         if (validateForm() == false) { //data validation of input text (name). if not filled, do this...
             $("#interface").addClass("has-error");
             $(".control-label").remove();
             $("<label for=\"NameProtocol\" class=\"control-label\">You must name yourself, human.</label>").hide().prependTo("#interface").fadeIn(1000); //warning message if there is no name
         }
         else if (validateForm() == true){ //data validation; if its OK, do this...
-            console.log($('NameProtocol').val());
+            $.ajax({
+                url: "/quiz/" + $(this).attr("alt"),
+                dataType: "text",
+                success: function(data) {
+                    quiz = $.parseJSON(data);
+                    console.log(quiz);
+                },
+                async: false
+            });
             tracker++;
             $("#container").empty(); //clears the container HTML div so i can make new stuff in it
             $("#container").append("<h2>Hi " + username + "! " + quiz.questions[0].text + "</h2>").hide().fadeIn(1000); //fadeIn all new HTML
@@ -81,58 +78,21 @@ $("#imagetoggle").click(function() {
             }
             $("#interface").append("<br>");
             $("#interface").append("<input id=\"continue\" class=\"btn btn-success btn-lg\" type=\"button\" value=\"Next\"></input>"); // all of this code creates dynamically new elements that we can use for questions
-////////////////////////////////////////////////////////////////////////
-        $.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
-          {
-            tags: String(quiz.questions[tracker].meta_tags),
-            tagmode: "any",
-            format: "json"
-          },
-          function(data) {
-            $.each(data.items, function(i,item){
-              $("<br><img />").attr("src", item.media.m).appendTo("#interface");
-              if ( i == 0 ) return false;
-            });
-          });
-//////////////////////////////////////////////////////////////////////// calls the image from flickr to display onto page
-        }
-    });
+            $.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+                   {
+                     tags: String(quiz.questions[tracker].meta_tags),
+                     tagmode: "any",
+                     format: "json"
+                    },
+                    function(data) {
+                        $.each(data.items, function(i,item){
+                        $("<br><img />").attr("src", item.media.m).appendTo("#interface");
+                        if ( i == 0 ) return false;
+                    });
+            })
+    }
+});
 
-    $(document).keypress(function(e) { // This function allows it so that you can press enter to continue! same content as the series of code above.
-        if (e.which == 13 && tracker == -1){
-            if (validateForm() == false) {
-                $("#interface").addClass("has-error");
-                $(".control-label").remove();
-                $("<label for=\"NameProtocol\" class=\"control-label\">You must name yourself, human.</label>").hide().prependTo("#interface").fadeIn(1000);
-            }
-            else if (validateForm() == true){
-                tracker++;
-                $("#container").empty();
-                $("#container").append("<h2>Hi " + username + "! " + quiz.questions[0].text + "</h2>").hide().fadeIn(1000);
-////////////////////////////////////////////////////////////////////////
-        $.getJSON("https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
-          {
-            tags: String(quiz.questions[tracker].meta_tags),
-            tagmode: "any",
-            format: "json"
-          },
-          function(data) {
-            $.each(data.items, function(i,item){
-              $("<br><img />").attr("src", item.media.m).appendTo("#interface");
-              if ( i == 0 ) return false;
-            });
-          });
-//////////////////////////////////////////////////////////////////////// calls the image from flickr to display onto page
-                $("#container").append("<div class=\"col-md-6 col-md-offset-3 radio choices\" id=\"interface\">");
-                for(i = 0; i < quiz.questions[0].answers.length; i++){
-                    $("#interface").append("<input type=\"radio\" name=\"answer\">" + quiz.questions[0].answers[i] + "<br>");
-                    console.log("fire");
-                }
-                $("#interface").append("<br>");
-                $("#interface").append("<input id=\"continue\" class=\"btn btn-success btn-lg\" type=\"button\" value=\"Next\"></input>");
-            }
-        }
-    });
 
     $("#container").on("click", "#continue", function(){ //when you click the next button (this particular part of the code is for dynamically generated next buttons)
         if (tracker >= 0) {
@@ -334,7 +294,7 @@ $("#imagetoggle").click(function() {
 
 function animateBits() { //animates the BITS exchange into PhaseOne:Quiz on the 1st page
     const BITS_ID = 'bits';
-    const BITS_TEXT = 'PhaseTwo:Quiz';
+    const BITS_TEXT = 'PhaseThree:Quiz';
     const BITS_ANIMATE_INTERVAL = 75.0;
     const BITS_ANIMATE_DURATION = 1750.0;
     var bitsTextTicks = 0;
@@ -355,7 +315,7 @@ function animateBits() { //animates the BITS exchange into PhaseOne:Quiz on the 
 
 function animateBits2() { //same thing, but for another entity
     const BITS_ID = 'bits2';
-    const BITS_TEXT = 'PhaseTwo:Quiz';
+    const BITS_TEXT = 'PhaseThree:Quiz';
     const BITS_ANIMATE_INTERVAL = 75.0;
     const BITS_ANIMATE_DURATION = 1750.0;
     var bitsTextTicks = 0;

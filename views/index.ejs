@@ -1,0 +1,36 @@
+<html>
+<% include header %>
+<body>
+
+<i class="icon-volume-up icon-2x toggle" id="soundtoggle"></i> <!-- Sound Button --> 
+<i class="icon-picture icon-2x toggle" id="imagetoggle"></i><!-- Image Button --> 
+
+<div id="container">
+<h1> Welcome to <code id="bits2">1010110110101</code>.</h1>
+<div class="col-md-6 col-md-offset-3">
+<h4> Time for <code id="bits">1010110110101</code>. <strong>Before you begin, you should know you can turn off music and background gif with the toggles on the upper left hand corner.</strong> When you are ready, type your name, choose your quiz, and begin.</h4>
+</div>
+<div class="col-md-6 col-md-offset-3" id="interface">
+<input type="text" name="name" id="NameProtocol" class="form-control" placeholder="Name">
+<br>
+<a href="http://www.justinhe.com"><button id="website" type="button" class="btn btn-primary btn-lg"><i class="icon-user"></i> Creator </button></a>
+<a href="https://www.github.com/justinhe16/PhaseTwoQuiz"><button id="forkme" type="button" class="btn btn-default btn-lg"><i class="icon-github"></i> Github Repo</button></a>
+<a href="/"><button id="upload" type="button" class="btn btn-warning btn-lg"><i class="icon-upload"></i> Upload</button></a>
+<a href="/"><button id="upload" type="button" class="btn btn-info btn-lg"><i class="icon-upload"></i> Edit</button></a>
+<br>
+<br>
+<div class="dropup">
+  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    If you're ready to begin, Pick your quiz here!
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+<% for(var i=0; i< stuff.titles.length; i++) {%>
+   <li><a class="continue" alt="<%= stuff.id[i] %>" href="#"><%= stuff.titles[i] %></a></li>
+<% } %>
+  </ul>
+</div>
+</div>
+</div>
+</body>
+</html>
