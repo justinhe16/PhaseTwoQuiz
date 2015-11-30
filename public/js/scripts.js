@@ -70,6 +70,7 @@ $("#imagetoggle").click(function() {
                 async: false
             });
             tracker++;
+            document.title = quiz.title;
             $("#container").empty(); //clears the container HTML div so i can make new stuff in it
             $("#container").append("<h2>Hi " + username + "! " + quiz.questions[0].text + "</h2>").hide().fadeIn(1000); //fadeIn all new HTML
             $("#container").append("<div class=\"col-md-6 col-md-offset-3 choices radio\" id=\"interface\">"); //making a dynamic div
@@ -89,10 +90,57 @@ $("#imagetoggle").click(function() {
                         $("<br><img />").attr("src", item.media.m).appendTo("#interface");
                         if ( i == 0 ) return false;
                     });
-            })
-    }
-});
+               })
+         }
+    });
+    
+    $("#make").click(function() { //the function used to create a form to make a quiz.
+            $("#container").empty(); //clears the container HTML div so i can make new stuff in it
+            $("#container").append("<h1>Make your quiz!</h1>").hide().fadeIn(1000); //fadeIn all new HTML
+            $("#container").append("<div class=\"col-md-8 col-md-offset-2 choices radio\" id=\"interface\">"); //making a dynamic div
+            $("#interface").append("<form id='makequiz' class='form-horizontal'>");  
+            $(".form-horizontal").append('<div class="form-group"><label for="title" class="col-sm-2 control-label">Title</label><div class="col-sm-10"><input type="text" class="form-control" id="title" name="title" placeholder="Title"></div></div>');
+            $(".form-horizontal").append('<div class="form-group"><label for="description" class="col-sm-2 control-label">Description</label><div class="col-sm-10"><textarea rows="2" class="form-control" id="description" name="description" placeholder="Description"></textarea></div></div>');
+            $(".form-horizontal").append('<div class="form-group form-group-meta-tags-quiz"><label for="meta_tags" class="col-sm-2 control-label">Meta_tags</label><div class="col-sm-8"><input type="text" class="form-control" id="meta_tags" name="meta_tags" placeholder="Meta_tag"></div><a><button id="addmetatagstoquiz" type="button" class="btn btn-info btn-sm"><i class="icon-plus-sign"></i></button></a></div>');
+            $(".form-horizontal").append('<div class="form-group"><label for="difficulty" class="col-sm-2 control-label">Difficulty</label><div class="col-sm-10"><input type="text" class="form-control" id="difficulty" name="difficulty" placeholder="Difficulty, from 1-20"></div></div>');
 
+            for (var y = 0; y < 10; y++){
+            $(".form-horizontal").append('<hr>');
+            $(".form-horizontal").append('<h4>Question ' + (y+1) + '</h4>');
+            $(".form-horizontal").append('<div class="form-group"><label for="question' + (y+1) + '" class="col-sm-2 control-label">Question ' + (y+1) + '</label><div class="col-sm-10"><input type="text" class="form-control" id="text' + (y+1) + '" name="questions[' + y + '][text]" placeholder="Text"></div></div>');
+            $(".form-horizontal").append('<div class="form-group" alt="' + y + '"><label for="answerchoice' + (y+1) + '" class="col-sm-2 control-label">Answer Choices</label><div class="col-sm-8"><input type="text" class="form-control" id="answerchoice' + (y+1) + '" name="questions[' + y + '][answers][]" placeholder="Answer Choice"></div><a><button id="addchoicestoquestion" type="button" class="btn btn-info btn-sm"><i class="icon-plus-sign"></i></button></a></div>');
+            $(".form-horizontal").append('<div class="form-group"><label for="correctanswer' + (y+1) + '" class="col-sm-2 control-label">Correct Answer</label><div class="col-sm-10"><input type="text" class="form-control" id="correctanswer' + (y+1) + '" name="questions[' + y + '][correct_answer]" placeholder="Correct Answer (# of the array spot; i.e 0,1,2,3...)"></div></div>');
+            $(".form-horizontal").append('<div class="form-group" alt="' + y + '"><label for="meta_tags' + (y+1) + '" class="col-sm-2 control-label">Meta_tags</label><div class="col-sm-8"><input type="text" class="form-control" id="meta_tags' + (y+1) + '" name="questions[' + y + '][meta_tags][]" placeholder="Meta_tag"></div><a><button id="addmetatagstoquestion" type="button" class="btn btn-info btn-sm"><i class="icon-plus-sign"></i></button></a></div>');
+        }
+
+            $("#interface").append('<center><a><button id="makequizbutton" type="button" class="btn btn-success btn-lg"><i class="icon-upload-alt"></i>Make your quiz!</button></a></center>')
+    });
+
+    $("#container").on("click", "#addmetatagstoquiz", function(){ //when the user wants to add more metatags to the quiz during the creation process
+        $(".form-group-meta-tags-quiz").append('<div class="col-sm-offset-2 col-sm-8"><input type="text" class="form-control" id="meta_tags" name="meta_tags" placeholder="Meta_tag"></div>');
+    });
+    $("#container").on("click", "#addmetatagstoquestion", function(){ //when the user wants to add more metatags to questions during the creation process
+        $(this).parent().parent().append('<div class="col-sm-offset-2 col-sm-8"><input type="text" class="form-control" id="meta_tags" name="questions[' + $(this).parent().parent().attr("alt") + '][meta_tags][]" placeholder="Meta_tag"></div>');
+    });
+    $("#container").on("click", "#addchoicestoquestion", function(){ //when the user wants to add more answer choices to questions during the creation process
+        $(this).parent().parent().append('<div class="col-sm-offset-2 col-sm-8"><input type="text" class="form-control" id="meta_tags" name="questions[' + $(this).parent().parent().attr("alt") + '][answers][]" placeholder="Answer Choice"></div>');
+    });
+    $("#container").on("click", "#makequizbutton", function() {
+        var makequizformdata = $("form#makequiz").serializeObject();
+        console.log(makequizformdata);
+        for (var e = 0; e < makequizformdata.questions.length; e++){ // i do this to fill in the missing parts of the json!
+            makequizformdata.questions[e].global_correct = 0;
+            makequizformdata.questions[e].global_total = 0;
+        }
+        $.ajax({
+          method: "POST",
+          url: "/quiz",
+          data: makequizformdata
+        })
+          .done(function(msg) {
+            console.log( "Data Saved: " + msg );
+           });
+    });
 
     $("#container").on("click", "#continue", function(){ //when you click the next button (this particular part of the code is for dynamically generated next buttons)
         if (tracker >= 0) {
@@ -193,9 +241,9 @@ $("#imagetoggle").click(function() {
         var myRealJsonString = JSON.parse(myJsonString);
         console.log(myRealJsonString);
 
-        //sends a post request to the server
+        //sends a put request to the server
         $.ajax({
-          method: "POST",
+          method: "PUT",
           url: "/quiz",
           data: myRealJsonString
         })
@@ -203,7 +251,7 @@ $("#imagetoggle").click(function() {
             console.log( "Data Saved: " + msg );
           });
 
-        //retrieving the quiz again after posting to it
+        //retrieving the quiz again after puting to it
         $.ajax({
             url: "js/quiz.json",
             dataType: "text",

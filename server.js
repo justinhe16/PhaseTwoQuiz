@@ -42,7 +42,6 @@ app.get('/quiz/:id', function(request, response) {
   var ID = request.params.id;
   var FULLQUIZ = require('./data/quiz.json');
   var SELECTEDQUIZ = FULLQUIZ[ID-1];
-  var TOBSESENTQUIZ = JSON.stringify(SELECTEDQUIZ);
   response.send(SELECTEDQUIZ);
 });
 
@@ -51,19 +50,33 @@ app.get('/gettopJSON', function(request, response) {
   response.send(a);
 });
 
-app.post('/quiz', function(request, response) {
-  var Tobestoredjson = JSON.stringify(request.body, null, 4);
-  console.log(Tobestoredjson);
-  fs.writeFile('./data/quiz.json', Tobestoredjson, function (err) {
+app.put('/quiz', function(request, response) {
+  var FULLQUIZput = require('./data/quiz.json');
+  console.log(request.body);
+  FULLQUIZput[request.body.id-1] = request.body;
+  var FULLQUIZputstring = JSON.stringify(FULLQUIZput, null, 4);
+  fs.writeFile('./data/quiz.json', FULLQUIZputstring, function (err) {
   if (err) throw err;
   console.log('It\'s saved!');
   });
-  response.send(Tobestoredjson + "fire");
+  response.send(FULLQUIZput);
+});
+
+app.post('/quiz', function(request, response) {
+  var FULLQUIZpost = require('./data/quiz.json');
+  var QUIZTOBEADDEDpost = request.body;
+  QUIZTOBEADDEDpost.id = FULLQUIZpost.length+1;
+  FULLQUIZpost[QUIZTOBEADDEDpost.id-1] = QUIZTOBEADDEDpost;
+  var FULLQUIZpoststring = JSON.stringify(FULLQUIZpost, null, 4);
+  fs.writeFile('./data/quiz.json', FULLQUIZpoststring, function (err) {
+  if (err) throw err;
+  console.log('It\'s saved!');
+  });
+  response.send(FULLQUIZpost);
 });
 
 app.post('/top', function(request, response) {
   var Tobestoredtopjson = JSON.stringify(request.body, null, 4);
-  console.log(Tobestoredtopjson);
   fs.writeFile('./data/top10.json', Tobestoredtopjson, function (err) {
   if (err) throw err;
   console.log('It\'s saved!');
