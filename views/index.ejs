@@ -15,14 +15,42 @@
 <br>
 <a href="http://www.justinhe.com"><button id="website" type="button" class="btn btn-primary btn-lg"><i class="icon-user"></i> Creator </button></a>
 <a href="https://www.github.com/justinhe16/PhaseTwoQuiz"><button id="forkme" type="button" class="btn btn-default btn-lg"><i class="icon-github"></i> Github Repo</button></a>
-<a href="#"><button id="make" type="button" class="btn btn-warning btn-lg"><i class="icon-upload"></i> Make</button></a>
-<a href="#"><button id="edit" type="button" class="btn btn-info btn-lg"><i class="icon-upload"></i> Edit</button></a>
-<a href="#"><button id="delete" type="button" class="btn btn-danger btn-lg"><i class="icon-upload"></i> Delete</button></a>
+<a href="#"><button id="make" type="button" class="btn btn-warning btn-lg"><i class="icon-upload"></i> Make a Quiz!</button></a>
+
 <br>
 <br>
+
 <div class="dropup">
-  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    If you're ready to begin, Pick your quiz here!
+  <button class="btn btn-lg btn-danger dropdown-toggle" type="button" id="dropdownMenu3 delete" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-trash"></i>
+    Delete a Quiz!
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+<% for(var i=0; i< stuff.titles.length; i++) {%>
+   <li><a class="delete" alt="<%= stuff.id[i] %>" href="#"><%= stuff.titles[i] %></a></li>
+<% } %>
+  </ul>
+</div>
+
+<br> 
+
+<div class="dropup">
+  <button class="btn btn-lg btn-info dropdown-toggle" type="button" id="dropdownMenu2 edit" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-edit"></i>
+    Edit a Quiz!
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+<% for(var i=0; i< stuff.titles.length; i++) {%>
+   <li><a class="edit" alt="<%= stuff.id[i] %>" href="#"><%= stuff.titles[i] %></a></li>
+<% } %>
+  </ul>
+</div>
+
+<br>
+
+<div class="dropup">
+  <button class="btn btn-lg btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-play"></i>
+    Take a Quiz!
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -31,6 +59,10 @@
 <% } %>
   </ul>
 </div>
+
+<br>
+<br>
+
 </div>
 </div>
 </body>

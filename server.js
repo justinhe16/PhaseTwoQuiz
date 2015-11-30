@@ -72,7 +72,6 @@ app.post('/quiz', function(request, response) {
   if (err) throw err;
   console.log('It\'s saved!');
   });
-  response.send(FULLQUIZpost);
 });
 
 app.post('/top', function(request, response) {
