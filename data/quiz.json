@@ -545,16 +545,9 @@
         ]
     },
     {
-        "id": "4",
         "title": "Software Engineering Class Fun Food Facts!",
         "description": "A fun quiz testing your knowledge on food facts about your classmates!",
-        "meta_tags": [
-            "yummy",
-            "food",
-            "fun",
-            "classmates",
-            "eat"
-        ],
+        "meta_tags": "computer class",
         "difficulty": "1-5",
         "questions": [
             {
@@ -563,14 +556,15 @@
                     "Hamburger",
                     "Pizza",
                     "Sushi",
-                    "Salad"
+                    "Salad",
+                    "Water"
                 ],
-                "correct_answer": 2,
+                "correct_answer": "2",
                 "meta_tags": [
                     "Japanese food"
                 ],
-                "global_correct": 14,
-                "global_total": 29
+                "global_correct": "14",
+                "global_total": "29"
             },
             {
                 "text": "What does Catherine refuse to eat?",
@@ -580,12 +574,12 @@
                     "Eggs",
                     "Mushrooms"
                 ],
-                "correct_answer": 1,
+                "correct_answer": "1",
                 "meta_tags": [
                     "seafood"
                 ],
-                "global_correct": 9,
-                "global_total": 29
+                "global_correct": "9",
+                "global_total": "29"
             },
             {
                 "text": "What snack food does Grace like to put on her cookies?",
@@ -595,12 +589,12 @@
                     "Pretzels",
                     "Potato Chips"
                 ],
-                "correct_answer": 3,
+                "correct_answer": "3",
                 "meta_tags": [
                     "potato chips"
                 ],
-                "global_correct": 9,
-                "global_total": 29
+                "global_correct": "9",
+                "global_total": "29"
             },
             {
                 "text": "What non-consumable item did Alastair ingest at the age of 3?",
@@ -610,12 +604,12 @@
                     "A lego",
                     "A bottle cap"
                 ],
-                "correct_answer": 0,
+                "correct_answer": "0",
                 "meta_tags": [
                     "coins"
                 ],
-                "global_correct": 2,
-                "global_total": 29
+                "global_correct": "2",
+                "global_total": "29"
             },
             {
                 "text": "What food did Sam stuff in his nose at the age of 1?",
@@ -625,12 +619,12 @@
                     "Skittles",
                     "Mini marshmallows"
                 ],
-                "correct_answer": 1,
+                "correct_answer": "1",
                 "meta_tags": [
                     "raisin"
                 ],
-                "global_correct": 6,
-                "global_total": 29
+                "global_correct": "6",
+                "global_total": "29"
             },
             {
                 "text": "What topping did Max stuff in his nose this past summer?",
@@ -640,12 +634,12 @@
                     "Whipped Cream",
                     "Butterscotch"
                 ],
-                "correct_answer": 2,
+                "correct_answer": "2",
                 "meta_tags": [
                     "whipped cream"
                 ],
-                "global_correct": 13,
-                "global_total": 29
+                "global_correct": "13",
+                "global_total": "29"
             },
             {
                 "text": "What is Justin's favorite holiday food?",
@@ -655,12 +649,12 @@
                     "Longevity Noodles",
                     "Moon Cake"
                 ],
-                "correct_answer": 3,
+                "correct_answer": "3",
                 "meta_tags": [
                     "moon cake"
                 ],
-                "global_correct": 15,
-                "global_total": 29
+                "global_correct": "15",
+                "global_total": "29"
             },
             {
                 "text": "What does Conor bring to movie theaters as a snack?",
@@ -670,12 +664,12 @@
                     "Dried Peas",
                     "Fried Rice"
                 ],
-                "correct_answer": 0,
+                "correct_answer": "0",
                 "meta_tags": [
                     "salad"
                 ],
-                "global_correct": 6,
-                "global_total": 29
+                "global_correct": "6",
+                "global_total": "29"
             },
             {
                 "text": "What is David's favorite ice cream flavor?",
@@ -685,12 +679,12 @@
                     "Vanilla",
                     "Coffee"
                 ],
-                "correct_answer": 2,
+                "correct_answer": "2",
                 "meta_tags": [
                     "ice cream"
                 ],
-                "global_correct": 17,
-                "global_total": 29
+                "global_correct": "17",
+                "global_total": "29"
             },
             {
                 "text": "What does Nathalie like putting in her oatmeal?",
@@ -700,14 +694,15 @@
                     "Coffee Beans",
                     "Turkey"
                 ],
-                "correct_answer": 3,
+                "correct_answer": "3",
                 "meta_tags": [
                     "oatmeal"
                 ],
-                "global_correct": 14,
-                "global_total": 29
+                "global_correct": "14",
+                "global_total": "29"
             }
-        ]
+        ],
+        "id": "4"
     },
     {
         "id": "5",
@@ -1909,6 +1904,7 @@
         "title": "Can you guess who said it?",
         "description": "Quiz by Nathalie Young",
         "difficulty": 10,
+        "meta_tags": "",
         "questions": [
             {
                 "text": "Happiness in not something ready made. It comes from your own actions",
@@ -2299,151 +2295,129 @@
         ]
     },
     {
-        "title": "Conor's 2nd Quiz",
-        "description": "The inside scoop on Conor Yuen!",
-        "meta_tags": "noob",
-        "difficulty": "15",
+        "title": "Max's 2nd Quiz",
+        "description": "FIREEE",
+        "meta_tags": "POSDKPOASKDPO",
+        "difficulty": "19",
         "questions": [
             {
-                "text": "What is Conor's Favorite Food?",
+                "text": "What is my favorite cat",
                 "answers": [
-                    "Spaghetti",
-                    "Cookies"
-                ],
-                "correct_answer": "0",
-                "meta_tags": [
-                    "food"
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "What is Conor's Favorite Food?",
-                "answers": [
-                    "Spaghetti",
-                    "Cookies",
-                    "Nile Perch"
+                    "dogs",
+                    "cats ",
+                    "kittens"
                 ],
                 "correct_answer": "2",
                 "meta_tags": [
-                    "food"
+                    "asodkok"
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "What is Conor's Favorite Food?",
+                "text": "",
                 "answers": [
-                    "asdooaskd",
-                    "ozdkok",
-                    "osdkfodk",
-                    "osdkosk"
+                    ""
                 ],
-                "correct_answer": "2",
+                "correct_answer": "",
                 "meta_tags": [
-                    "okadosk"
+                    ""
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "What is Conor's Favorite Food?",
+                "text": "",
                 "answers": [
-                    "oqwkedoskdowdks",
-                    "aos",
-                    "b",
-                    "c",
-                    "d",
-                    "e"
+                    ""
                 ],
-                "correct_answer": "5",
+                "correct_answer": "",
                 "meta_tags": [
-                    "2"
+                    ""
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "What is Conor's Favorite Food?",
+                "text": "",
                 "answers": [
-                    "asdfghjk",
-                    "sdfo",
-                    "3"
+                    ""
                 ],
-                "correct_answer": "2",
+                "correct_answer": "",
                 "meta_tags": [
-                    "asodk"
+                    ""
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "What is Conor's Favorite Food?",
+                "text": "",
                 "answers": [
-                    "aosdk",
-                    "sdok",
-                    "STUFF PLS WORK"
+                    ""
                 ],
-                "correct_answer": "2",
+                "correct_answer": "",
                 "meta_tags": [
-                    "FOOD"
+                    ""
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "PRAISE JESUS",
+                "text": "",
                 "answers": [
-                    "OASDKAOSK",
-                    "BIBLE"
+                    ""
                 ],
-                "correct_answer": "1",
+                "correct_answer": "",
                 "meta_tags": [
-                    "SDOK"
+                    ""
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "BOOKS",
+                "text": "",
                 "answers": [
-                    "Dogs",
-                    "cats",
-                    "perch",
-                    "bird",
-                    "logs"
+                    ""
                 ],
-                "correct_answer": "3",
+                "correct_answer": "",
                 "meta_tags": [
-                    "osa"
+                    ""
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "oakdfpokdfpok",
+                "text": "",
                 "answers": [
-                    "FOOD",
-                    "FOOD1",
-                    "FOOD2"
+                    ""
                 ],
-                "correct_answer": "2",
+                "correct_answer": "",
                 "meta_tags": [
-                    "SDOKO"
+                    ""
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "What is Conor's Favorite Food?",
+                "text": "",
                 "answers": [
-                    "plsplsplsplspls",
-                    "plsplsplsplsplsplsplsplsplsplsplsplsplsplspls",
-                    "plsplsplsplsplsplsplsplsplsplsplsplsplsplsplsplsplsplsplsplsplsplsplsplspls"
+                    ""
                 ],
-                "correct_answer": "2",
+                "correct_answer": "",
                 "meta_tags": [
-                    "sdokaso"
+                    ""
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "",
+                "answers": [
+                    ""
+                ],
+                "correct_answer": "",
+                "meta_tags": [
+                    ""
                 ],
                 "global_correct": "0",
                 "global_total": "0"
@@ -2452,9 +2426,9 @@
         "id": 12
     },
     {
-        "title": "",
+        "title": "pasokdpasodk",
         "description": "",
-        "meta_tags": "",
+        "meta_tags": "metatags",
         "difficulty": "",
         "questions": [
             {
@@ -2581,9 +2555,9 @@
         "id": 13
     },
     {
-        "title": "",
-        "description": "",
-        "meta_tags": "",
+        "title": "asdokpoaskd",
+        "description": "pokasdpoaskd",
+        "meta_tags": "3f",
         "difficulty": "",
         "questions": [
             {
@@ -2710,36 +2684,35 @@
         "id": 14
     },
     {
-        "title": "Alastair's Inner Life",
-        "description": "ALAAAASTIAR!!!",
-        "meta_tags": "ster",
-        "difficulty": "20",
+        "title": "testtest",
+        "description": "",
+        "meta_tags": [
+            "abc",
+            "cde",
+            "edf"
+        ],
+        "difficulty": "",
         "questions": [
             {
-                "text": "What is Alastair's Middle Name?",
+                "text": "",
                 "answers": [
-                    "He",
-                    "Borthwick",
-                    "Glasses",
-                    "Gohde"
+                    ""
                 ],
-                "correct_answer": "1",
+                "correct_answer": "",
                 "meta_tags": [
-                    "whiteboy"
+                    ""
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "What is Alastair's favorite color?",
+                "text": "",
                 "answers": [
-                    "Green",
-                    "Blue",
-                    "Yellow"
+                    ""
                 ],
-                "correct_answer": "2",
+                "correct_answer": "",
                 "meta_tags": [
-                    "color"
+                    ""
                 ],
                 "global_correct": "0",
                 "global_total": "0"
@@ -2842,560 +2815,5 @@
             }
         ],
         "id": 15
-    },
-    {
-        "title": "",
-        "description": "",
-        "meta_tags": "",
-        "difficulty": "",
-        "questions": [
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            },
-            {
-                "text": "aosdksodakok",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "1",
-                "global_total": "1"
-            }
-        ],
-        "id": "16"
-    },
-    {
-        "title": "",
-        "description": "",
-        "meta_tags": "",
-        "difficulty": "",
-        "questions": [
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            }
-        ],
-        "id": 17
-    },
-    {
-        "title": "cats are cool",
-        "description": "aposdkapsodkaspdokapsodksp",
-        "meta_tags": "",
-        "difficulty": "",
-        "questions": [
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            }
-        ],
-        "id": 18
     }
 ]

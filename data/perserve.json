@@ -1909,6 +1909,7 @@
         "title": "Can you guess who said it?",
         "description": "Quiz by Nathalie Young",
         "difficulty": 10,
+        "meta_tags": "",
         "questions": [
             {
                 "text": "Happiness in not something ready made. It comes from your own actions",
