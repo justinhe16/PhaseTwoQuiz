@@ -104,6 +104,7 @@ $("#imagetoggle").click(function() {
     $("#make").click(function() { //the function used to create a form to make a quiz.
             $("#container").empty(); //clears the container HTML div so i can make new stuff in it
             $("#container").append("<h1>Make your quiz!</h1>").hide().fadeIn(1000); //fadeIn all new HTML
+            $("#container").append("<h4>The correct answer text field accepts an array placement number. This means that if the correct answer choice is the first answer choice listed, then the correct answer would be '0'. Thus, the second would be '1', third would be '2', etc.");
             $("#container").append("<div class=\"col-md-8 col-md-offset-2 choices radio\" id=\"interface\">"); //making a dynamic div
             $("#interface").append("<form id='makequiz' class='form-horizontal'>");  
             $(".form-horizontal").append('<div class="form-group"><label for="title" class="col-sm-2 control-label">Title</label><div class="col-sm-10"><input type="text" class="form-control" id="title" name="title" placeholder="Title"></div></div>');
@@ -111,7 +112,7 @@ $("#imagetoggle").click(function() {
             $(".form-horizontal").append('<div class="form-group form-group-meta-tags-quiz"><label for="meta_tags" class="col-sm-2 control-label">Meta_tags</label><div class="col-sm-8"><input type="text" class="form-control" id="meta_tags" name="meta_tags[]" placeholder="Meta_tag"></div><a><button id="addmetatagstoquiz" type="button" class="btn btn-info btn-sm"><i class="icon-plus-sign"></i></button></a></div>');
             $(".form-horizontal").append('<div class="form-group"><label for="difficulty" class="col-sm-2 control-label">Difficulty</label><div class="col-sm-10"><input type="text" class="form-control" id="difficulty" name="difficulty" placeholder="Difficulty, from 1-20"></div></div>');
 
-            for (var y = 0; y < 10; y++){
+            for (var y = 0; y < 3; y++){
             $(".form-horizontal").append('<hr>');
             $(".form-horizontal").append('<h4>Question ' + (y+1) + '</h4>');
             $(".form-horizontal").append('<div class="form-group"><label for="question' + (y+1) + '" class="col-sm-2 control-label">Text </label><div class="col-sm-10"><input type="text" class="form-control" id="text' + (y+1) + '" name="questions[' + y + '][text]" placeholder="Text"></div></div>');
@@ -177,6 +178,7 @@ $("#imagetoggle").click(function() {
         });
             $("#container").empty(); //clears the container HTML div so i can make new stuff in it
             $("#container").append("<h1>Edit your quiz!</h1>").hide().fadeIn(1000); //fadeIn all new HTML
+            $("#container").append("<h4>The correct answer text field accepts an array placement number. This means that if the correct answer choice is the first answer choice listed, then the correct answer would be '0'. Thus, the second would be '1', third would be '2', etc.");
             $("#container").append("<div class=\"col-md-8 col-md-offset-2 choices radio\" id=\"interface\">"); //making a dynamic div
             $("#interface").append("<form id='editquiz' class='form-horizontal'>");  
             $(".form-horizontal").append('<div class="form-group"><label for="title" class="col-sm-2 control-label">Title</label><div class="col-sm-10"><input type="text" class="form-control" id="title" name="title" value="' + quizedit.title + '"placeholder="Title"></div></div>');
@@ -209,7 +211,7 @@ $("#imagetoggle").click(function() {
         }
             $("#interface").append('<center><a><button id="addquestionsedit" type="button" class="btn btn-info btn-lg"><i class="icon-plus-sign"></i> Add more Questions</button></a></center>')
             $("#interface").append('<br>')
-            $("#interface").append('<center><a href="#"><button id="editquizbutton" type="button" class="btn btn-success btn-lg"><i class="icon-upload-alt"></i> Edit your quiz!</button></a></center>')
+            $("#interface").append('<center><a href="/"><button id="editquizbutton" type="button" class="btn btn-success btn-lg"><i class="icon-upload-alt"></i> Edit your quiz!</button></a></center>')
     });
 
     $("#container").on("click", "#addmetatagstoquizedit", function(){ //when the user wants to add more metatags to the quiz during the creation process
@@ -244,7 +246,7 @@ $("#imagetoggle").click(function() {
             editquizformdata.questions[g].global_correct = quizedit.questions[g].global_correct;
             editquizformdata.questions[g].global_total = quizedit.questions[g].global_total;
             }
-        for (var p = g+1; p < editquizformdata.questions.length; p++){
+        for (var p = quizedit.questions.length; p < editquizformdata.questions.length; p++){
             editquizformdata.questions[p].global_correct = 0;
             editquizformdata.questions[p].global_total = 0;
         }
@@ -260,6 +262,24 @@ $("#imagetoggle").click(function() {
            });
     });
 // --------- --------- --------- ^^^^^ THIS IS FOR THE EDITING OF A QUIZ FUNCTIONALITY ^^^^^ --------- --------- ---------
+
+
+
+// --------- --------- --------- --------- THIS IS FOR THE DELETION OF A QUIZ FUNCTIONALITY --------- --------- --------- ---------
+
+    $(".delete").click(function() { //This is the response for the delete drop down menu.
+        $.ajax({
+            url: "/quiz/" + $(this).attr("alt"),
+            type: "DELETE"
+        })
+            .done(function(msg) {
+                console.log("deleted completed" + msg);
+            });
+    });
+
+// --------- --------- --------- ^^^^^^^^^^^ THIS IS FOR THE DELETION OF A QUIZ FUNCTIONALITY ^^^^^^^^^^ --------- --------- ---------
+
+
 
 
     $("#container").on("click", "#continue", function(){ //when you click the next button (this particular part of the code is for dynamically generated next buttons)

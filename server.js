@@ -74,6 +74,19 @@ app.post('/quiz', function(request, response) {
   });
 });
 
+app.delete('/quiz/:id', function(request, response){
+  var idTOBEDELETED = request.params.id;
+  var fullQuizDelete = require('./data/quiz.json');
+  fullQuizDelete.splice(idTOBEDELETED-1, 1);
+
+  for(var i = idTOBEDELETED-1; i<fullQuizDelete.length; i++){
+    fullQuizDelete[i].id=fullQuizDelete[i].id-1;
+  }
+
+  var fullQuizDeleteSTORED = JSON.stringify(fullQuizDelete, null, 4);
+  fs.writeFileSync('./data/quiz.json', fullQuizDeleteSTORED, 'utf8');
+});
+
 app.post('/top', function(request, response) {
   var Tobestoredtopjson = JSON.stringify(request.body, null, 4);
   fs.writeFile('./data/top10.json', Tobestoredtopjson, function (err) {
