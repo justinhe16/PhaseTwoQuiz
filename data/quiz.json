@@ -1908,7 +1908,7 @@
     {
         "title": "Can you guess who said it?",
         "description": "Quiz by Nathalie Young",
-        "meta_tags": "Nice",
+        "meta_tags": ["Nice"],
         "difficulty": "10",
         "questions": [
             {
