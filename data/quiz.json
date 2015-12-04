@@ -1,6 +1,5 @@
 [
     {
-        "id": "1",
         "title": "The Inside Story",
         "description": "Matt Armstrong Quiz",
         "meta_tags": [
@@ -19,11 +18,11 @@
                     "Salem"
                 ],
                 "correct_answer": "3",
-                "global_correct": "2",
-                "global_total": "17",
                 "meta_tags": [
                     "Massachusetts Town"
-                ]
+                ],
+                "global_correct": "2",
+                "global_total": "17"
             },
             {
                 "text": "What sport does Matt Armstrong play?",
@@ -34,11 +33,11 @@
                     "Swimming"
                 ],
                 "correct_answer": "3",
-                "global_correct": "3",
-                "global_total": "17",
                 "meta_tags": [
                     "Sports"
-                ]
+                ],
+                "global_correct": "3",
+                "global_total": "17"
             },
             {
                 "text": "What is Matt Armstrong's address?",
@@ -49,11 +48,11 @@
                     "65 Central Park West, Apt. 12A, New York, NY 10023"
                 ],
                 "correct_answer": "1",
-                "global_correct": "6",
-                "global_total": "17",
                 "meta_tags": [
                     "Street Address"
-                ]
+                ],
+                "global_correct": "6",
+                "global_total": "17"
             },
             {
                 "text": "What summer camp did Matt Armstrong go to?",
@@ -65,11 +64,11 @@
                     "Camp Kingsley Pines"
                 ],
                 "correct_answer": "4",
-                "global_correct": "1",
-                "global_total": "17",
                 "meta_tags": [
                     "Camp"
-                ]
+                ],
+                "global_correct": "1",
+                "global_total": "17"
             },
             {
                 "text": "What is on the second shelf of Matt Armstrong's room?",
@@ -81,11 +80,11 @@
                     "Books"
                 ],
                 "correct_answer": "4",
-                "global_correct": "2",
-                "global_total": "17",
                 "meta_tags": [
                     "Shelf"
-                ]
+                ],
+                "global_correct": "2",
+                "global_total": "17"
             },
             {
                 "text": "What is the name of Matt Armstrong's sister?",
@@ -97,11 +96,11 @@
                     "Alexis"
                 ],
                 "correct_answer": "2",
-                "global_correct": "7",
-                "global_total": "17",
                 "meta_tags": [
                     "Name Tag"
-                ]
+                ],
+                "global_correct": "7",
+                "global_total": "17"
             },
             {
                 "text": "What is Matt Armstrong's tennis ranking?",
@@ -114,11 +113,11 @@
                     "Unranked"
                 ],
                 "correct_answer": "2",
-                "global_correct": "11",
-                "global_total": "17",
                 "meta_tags": [
                     "Tennis Ball"
-                ]
+                ],
+                "global_correct": "11",
+                "global_total": "17"
             },
             {
                 "text": "Where does Matt Armstrong's dad work?",
@@ -131,11 +130,11 @@
                     "Best Buy"
                 ],
                 "correct_answer": "0",
-                "global_correct": "3",
-                "global_total": "17",
                 "meta_tags": [
                     "Science Research"
-                ]
+                ],
+                "global_correct": "3",
+                "global_total": "17"
             },
             {
                 "text": "What is Matt Armstrong's favourite League of Legends Champion?",
@@ -147,11 +146,11 @@
                     "Leblanc"
                 ],
                 "correct_answer": "3",
-                "global_correct": "2",
-                "global_total": "17",
                 "meta_tags": [
                     "League of Legends"
-                ]
+                ],
+                "global_correct": "2",
+                "global_total": "17"
             },
             {
                 "text": "What is hanging on the wall in Matt's room?",
@@ -163,21 +162,22 @@
                     "A Stuffed Sheep"
                 ],
                 "correct_answer": "3",
-                "global_correct": "3",
-                "global_total": "17",
                 "meta_tags": [
                     "Samurai Sword"
-                ]
+                ],
+                "global_correct": "3",
+                "global_total": "17"
             }
-        ]
+        ],
+        "id": "1"
     },
     {
-        "id": "2",
         "title": "Music Quiz",
         "description": "Quiz",
         "meta_tags": [
             "Music"
         ],
+        "difficulty": "10",
         "questions": [
             {
                 "text": "What is a whole step above B?",
@@ -189,13 +189,13 @@
                     "A flat"
                 ],
                 "correct_answer": "3",
-                "global_correct": "0",
-                "global_total": "0",
                 "meta_tags": [
                     "Music",
                     "Violin",
                     "Piano"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What is the fourth note in a C major scale?",
@@ -207,13 +207,13 @@
                     "B#"
                 ],
                 "correct_answer": "1",
-                "global_correct": "0",
-                "global_total": "0",
                 "meta_tags": [
                     "Music",
                     "Violin",
                     "Piano"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "Which is a major triad?",
@@ -225,13 +225,13 @@
                     "F, G, B"
                 ],
                 "correct_answer": "2",
-                "global_correct": "0",
-                "global_total": "0",
                 "meta_tags": [
                     "Music",
                     "Violin",
                     "Piano"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What is the 7th note of a G major scale?",
@@ -243,13 +243,13 @@
                     "E flat"
                 ],
                 "correct_answer": "2",
-                "global_correct": "0",
-                "global_total": "0",
                 "meta_tags": [
                     "Music",
                     "Violin",
                     "Piano"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "How many flats are in the key signature of B flat?",
@@ -261,13 +261,13 @@
                     "5"
                 ],
                 "correct_answer": "1",
-                "global_correct": "0",
-                "global_total": "0",
                 "meta_tags": [
                     "Music",
                     "Violin",
                     "Piano"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "Which is a the formula for a Dorian scale?",
@@ -279,13 +279,13 @@
                     "H-W-W-W-W-H-H"
                 ],
                 "correct_answer": "0",
-                "global_correct": "0",
-                "global_total": "0",
                 "meta_tags": [
                     "Music",
                     "Violin",
                     "Piano"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What scale is exactly the same as the E Locrian scale?",
@@ -297,13 +297,13 @@
                     "F Minor"
                 ],
                 "correct_answer": "2",
-                "global_correct": "0",
-                "global_total": "0",
                 "meta_tags": [
                     "Music",
                     "Violin",
                     "Piano"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "Which of the following was an Italian classical composer, born south of Verona, Italy, known for his contributions to 18th-century opera?",
@@ -315,8 +315,6 @@
                     "Gioacchino Rossini"
                 ],
                 "correct_answer": "3",
-                "global_correct": "0",
-                "global_total": "0",
                 "meta_tags": [
                     "Music",
                     "Violin",
@@ -326,7 +324,9 @@
                     "Bellini",
                     "Salieri",
                     "Rossini"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What is the time signature in Led Zeppelin’s 'The Ocean?'' ",
@@ -338,14 +338,14 @@
                     "4/4 -> 2/4 -> 3/8"
                 ],
                 "correct_answer": "4",
-                "global_correct": "0",
-                "global_total": "0",
                 "meta_tags": [
                     "Music",
                     "Violin",
                     "Piano",
                     "Led Zeppelin"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What is, according to Billboard, the most successful song of all time?",
@@ -357,27 +357,27 @@
                     "'Hey Jude', The Beatles"
                 ],
                 "correct_answer": "0",
-                "global_correct": "0",
-                "global_total": "0",
                 "meta_tags": [
                     "Music",
                     "Violin",
                     "Piano",
                     "Santana",
                     "The Beatles"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             }
-        ]
+        ],
+        "id": "2"
     },
     {
-        "id": "3",
         "title": "My Quiz",
-        "description": "........",
-        "difficulty": "-19",
+        "description": "This is My Quiz!",
         "meta_tags": [
             "literature",
             "fun"
         ],
+        "difficulty": "19",
         "questions": [
             {
                 "text": "What was the original title of Farenheight 451?",
@@ -389,11 +389,11 @@
                     "Celsius 233"
                 ],
                 "correct_answer": "1",
-                "global_correct": "8",
-                "global_total": "37",
                 "meta_tags": [
                     "fire"
-                ]
+                ],
+                "global_correct": "8",
+                "global_total": "37"
             },
             {
                 "text": "What is the best-selling novel of all time?",
@@ -406,11 +406,11 @@
                     "Freakonomics"
                 ],
                 "correct_answer": "1",
-                "global_correct": "5",
-                "global_total": "33",
                 "meta_tags": [
                     "book"
-                ]
+                ],
+                "global_correct": "5",
+                "global_total": "33"
             },
             {
                 "text": "What type of bird did Edgar Allen Poe originally want to write about?",
@@ -423,14 +423,14 @@
                     "Finch"
                 ],
                 "correct_answer": "0",
-                "global_correct": "8",
-                "global_total": "33",
                 "meta_tags": [
                     "bird",
                     "raven",
                     "Edgar Allen Poe",
                     "Mockingjay"
-                ]
+                ],
+                "global_correct": "8",
+                "global_total": "33"
             },
             {
                 "text": "Which Shakespeare play does not feature a ghost?",
@@ -442,12 +442,12 @@
                     "Macbeth"
                 ],
                 "correct_answer": "3",
-                "global_correct": "13",
-                "global_total": "33",
                 "meta_tags": [
                     "Shakespeare",
                     "ghost"
-                ]
+                ],
+                "global_correct": "13",
+                "global_total": "33"
             },
             {
                 "text": "What was the original title of Pride and Prejudice?",
@@ -457,11 +457,11 @@
                     "First Impressions"
                 ],
                 "correct_answer": "2",
-                "global_correct": "18",
-                "global_total": "33",
                 "meta_tags": [
                     "impressionism"
-                ]
+                ],
+                "global_correct": "18",
+                "global_total": "33"
             },
             {
                 "text": "How many different words are in John Milton's paradise lost?",
@@ -473,11 +473,11 @@
                     "250"
                 ],
                 "correct_answer": "3",
-                "global_correct": "10",
-                "global_total": "33",
                 "meta_tags": [
                     "Paradise Lost"
-                ]
+                ],
+                "global_correct": "10",
+                "global_total": "33"
             },
             {
                 "text": "Who is Shelock Holmes's archrival?",
@@ -489,12 +489,12 @@
                     "Moriarity"
                 ],
                 "correct_answer": "4",
-                "global_correct": "16",
-                "global_total": "33",
                 "meta_tags": [
                     "Sherlock Holmes",
                     "Moriarty"
-                ]
+                ],
+                "global_correct": "16",
+                "global_total": "33"
             },
             {
                 "text": "Which poem did Robert Frost not write?",
@@ -504,15 +504,15 @@
                     "The Doormouse"
                 ],
                 "correct_answer": "2",
-                "global_correct": "24",
-                "global_total": "33",
                 "meta_tags": [
                     "Robert Frost",
                     "Snowy"
-                ]
+                ],
+                "global_correct": "24",
+                "global_total": "33"
             },
             {
-                "text": "\"I am an invisible man.\" This is the first line of which book?",
+                "text": "",
                 "answers": [
                     "The Invisible Man",
                     "The Catcher in the Rye",
@@ -520,12 +520,12 @@
                     "Notes From Underground"
                 ],
                 "correct_answer": "0",
-                "global_correct": "13",
-                "global_total": "33",
                 "meta_tags": [
                     "invisible man",
                     "literature"
-                ]
+                ],
+                "global_correct": "13",
+                "global_total": "33"
             },
             {
                 "text": "What is the name of the man being tried in To Kill a Mockingbird?",
@@ -536,18 +536,695 @@
                     "Tom Robinson"
                 ],
                 "correct_answer": "3",
-                "global_correct": "16",
-                "global_total": "37",
                 "meta_tags": [
                     "Mockingbird"
-                ]
+                ],
+                "global_correct": "16",
+                "global_total": "37"
             }
-        ]
+        ],
+        "id": "3"
     },
     {
-        "id": 4,
+        "title": "Software Engineering Class Fun Food Facts!",
+        "description": "A fun quiz testing your knowledge on food facts about your classmates!",
+        "meta_tags": [
+            "yummy",
+            "food",
+            "fun",
+            "classmates",
+            "eat"
+        ],
+        "difficulty": "1-5",
+        "questions": [
+            {
+                "text": "What is Matthew's favorite food?",
+                "answers": [
+                    "Hamburger",
+                    "Pizza",
+                    "Sushi",
+                    "Salad"
+                ],
+                "correct_answer": "2",
+                "meta_tags": [
+                    "Japanese food"
+                ],
+                "global_correct": "14",
+                "global_total": "29"
+            },
+            {
+                "text": "What does Catherine refuse to eat?",
+                "answers": [
+                    "Red Peppers",
+                    "Seafood",
+                    "Eggs",
+                    "Mushrooms"
+                ],
+                "correct_answer": "1",
+                "meta_tags": [
+                    "seafood"
+                ],
+                "global_correct": "9",
+                "global_total": "29"
+            },
+            {
+                "text": "What snack food does Grace like to put on her cookies?",
+                "answers": [
+                    "Goldfish",
+                    "Wheat Thins",
+                    "Pretzels",
+                    "Potato Chips"
+                ],
+                "correct_answer": "3",
+                "meta_tags": [
+                    "potato chips"
+                ],
+                "global_correct": "9",
+                "global_total": "29"
+            },
+            {
+                "text": "What non-consumable item did Alastair ingest at the age of 3?",
+                "answers": [
+                    "A penny",
+                    "A bolt",
+                    "A lego",
+                    "A bottle cap"
+                ],
+                "correct_answer": "0",
+                "meta_tags": [
+                    "coins"
+                ],
+                "global_correct": "2",
+                "global_total": "29"
+            },
+            {
+                "text": "What food did Sam stuff in his nose at the age of 1?",
+                "answers": [
+                    "M&Ms",
+                    "Raisins",
+                    "Skittles",
+                    "Mini marshmallows"
+                ],
+                "correct_answer": "1",
+                "meta_tags": [
+                    "raisin"
+                ],
+                "global_correct": "6",
+                "global_total": "29"
+            },
+            {
+                "text": "What topping did Max stuff in his nose this past summer?",
+                "answers": [
+                    "Caramel",
+                    "Chocolate Sauce",
+                    "Whipped Cream",
+                    "Butterscotch"
+                ],
+                "correct_answer": "2",
+                "meta_tags": [
+                    "whipped cream"
+                ],
+                "global_correct": "13",
+                "global_total": "29"
+            },
+            {
+                "text": "What is Justin's favorite holiday food?",
+                "answers": [
+                    "Roasted Squab",
+                    "Peking Duck",
+                    "Longevity Noodles",
+                    "Moon Cake"
+                ],
+                "correct_answer": "3",
+                "meta_tags": [
+                    "moon cake"
+                ],
+                "global_correct": "15",
+                "global_total": "29"
+            },
+            {
+                "text": "What does Conor bring to movie theaters as a snack?",
+                "answers": [
+                    "Croutons",
+                    "Pita Chips",
+                    "Dried Peas",
+                    "Fried Rice"
+                ],
+                "correct_answer": "0",
+                "meta_tags": [
+                    "salad"
+                ],
+                "global_correct": "6",
+                "global_total": "29"
+            },
+            {
+                "text": "What is David's favorite ice cream flavor?",
+                "answers": [
+                    "Chocolate",
+                    "Mint Chip",
+                    "Vanilla",
+                    "Coffee"
+                ],
+                "correct_answer": "2",
+                "meta_tags": [
+                    "ice cream"
+                ],
+                "global_correct": "17",
+                "global_total": "29"
+            },
+            {
+                "text": "What does Nathalie like putting in her oatmeal?",
+                "answers": [
+                    "Almonds",
+                    "Marshmallows",
+                    "Coffee Beans",
+                    "Turkey"
+                ],
+                "correct_answer": "3",
+                "meta_tags": [
+                    "oatmeal"
+                ],
+                "global_correct": "14",
+                "global_total": "29"
+            }
+        ],
+        "id": "4"
+    },
+    {
+        "title": "Solar System Quiz",
+        "description": "Test your knowledge of the Solar System",
+        "meta_tags": [
+            "Science",
+            "Physics",
+            "Fun"
+        ],
+        "difficulty": "15",
+        "questions": [
+            {
+                "text": "How many planets are in the solar system?",
+                "answers": [
+                    "1",
+                    "8",
+                    "9",
+                    "12"
+                ],
+                "correct_answer": "1",
+                "meta_tags": [
+                    "Solar System",
+                    "Planets"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "Pluto is classified as a...",
+                "answers": [
+                    "Planet",
+                    "Dwarf Planet",
+                    "Comet",
+                    "Astroid"
+                ],
+                "correct_answer": "1",
+                "meta_tags": [
+                    "Pluto",
+                    "Planet"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "About how hot is the sun?",
+                "answers": [
+                    "Very Hot",
+                    "5000 F",
+                    "10000 F",
+                    "15000 F",
+                    "20000 F"
+                ],
+                "correct_answer": "2",
+                "meta_tags": [
+                    "Sun",
+                    "Star"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "In what shape do planets orbit a single star?",
+                "answers": [
+                    "Circle",
+                    "Ellipse",
+                    "Parabola",
+                    "Spiral"
+                ],
+                "correct_answer": "1",
+                "meta_tags": [
+                    "Planet",
+                    "Orbit"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "The Moons of Uranus are named after...",
+                "answers": [
+                    "Ancient Egyptian Gods",
+                    "Roman Emperors",
+                    "Biblical Figures",
+                    "Characters from Shakespeare's plays"
+                ],
+                "correct_answer": "3",
+                "meta_tags": [
+                    "Uranus",
+                    "Planet"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "The first man-made object to leave the solar system was...",
+                "answers": [
+                    "Voyager 1",
+                    "Voyager 2",
+                    "New Horizon",
+                    "Orion"
+                ],
+                "correct_answer": "0",
+                "meta_tags": [
+                    "Deep Space",
+                    "Solar System"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "Many scientists view the canyons on Mars' surface primarily as evidence of...",
+                "answers": [
+                    "Early volcanic activity",
+                    "Numerous dust storms",
+                    "Early erosion from water",
+                    "Frequent tectonic activity"
+                ],
+                "correct_answer": "2",
+                "meta_tags": [
+                    "Mars",
+                    "Planet"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "Venus has surface temperatures that can melt lead. This is mainly due to...",
+                "answers": [
+                    "Intense heat from the sun",
+                    "Rampant Greenhouse Effect",
+                    "Geothermal Heat",
+                    "Tidal forces with the sun"
+                ],
+                "correct_answer": "1",
+                "meta_tags": [
+                    "Venus",
+                    "Planet"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "About how many times does Mercury orbit the Sun in one Neptune Year?",
+                "answers": [
+                    "105 times",
+                    "231 times",
+                    "574 times",
+                    "685 times",
+                    "1001 times"
+                ],
+                "correct_answer": "3",
+                "meta_tags": [
+                    "Mercury",
+                    "Planet"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "How long does it take for light that leave the sun to pass Saturn?",
+                "answers": [
+                    "10 minutes",
+                    "50 minutes",
+                    "80 minutes",
+                    "110 minutes",
+                    "150 minutes"
+                ],
+                "correct_answer": "2",
+                "meta_tags": [
+                    "Saturn",
+                    "Planet"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            }
+        ],
+        "id": "5"
+    },
+    {
+        "title": "Chemistry Quiz",
+        "description": "Test your chemistry knowledge!",
+        "meta_tags": [
+            "science",
+            "physics",
+            "fun"
+        ],
+        "difficulty": "15",
+        "questions": [
+            {
+                "text": "What is the specific heat of water?",
+                "answers": [
+                    "4.18 J/g°C",
+                    "5.18 J/g°C",
+                    "40.56 J/g°C",
+                    "20.56 J/g°C",
+                    "-2.56 J/g°C"
+                ],
+                "correct_answer": "0",
+                "meta_tags": [
+                    "specific heat",
+                    "water",
+                    "heat capacity"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "What is the molar mass of iron?",
+                "answers": [
+                    "0.56 grams",
+                    "5.6 grams",
+                    " 56 grams",
+                    "560 grams"
+                ],
+                "correct_answer": "2",
+                "meta_tags": [
+                    "iron",
+                    "protons"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "What does the symbol Au stand for?",
+                "answers": [
+                    "aluminum",
+                    "silver",
+                    "gold",
+                    "arsenic",
+                    "actinium"
+                ],
+                "correct_answer": "2",
+                "meta_tags": [
+                    "gold",
+                    "chemistry"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "How can we solve for change in internal energy?",
+                "answers": [
+                    "mCΔT",
+                    "PΔV",
+                    "q/T",
+                    "q + w"
+                ],
+                "correct_answer": "3",
+                "meta_tags": [
+                    "internal energy",
+                    "energy"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "What is one type of calorimetry?",
+                "answers": [
+                    "clock calorimetry",
+                    "coffee cup calorimetry",
+                    "styrofoam calorimetry"
+                ],
+                "correct_answer": "1",
+                "meta_tags": [
+                    "calorimetry"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "What is the ideal gas law?",
+                "answers": [
+                    "Pn=VRT",
+                    "PV=nRT",
+                    "RT=nPV",
+                    "PTV=nR",
+                    "V=nRPT",
+                    "n=PVRT"
+                ],
+                "correct_answer": "1",
+                "meta_tags": [
+                    "ideal gas law",
+                    "gas"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "Is enthalpy a state function?",
+                "answers": [
+                    "Yes",
+                    "No"
+                ],
+                "correct_answer": "0",
+                "meta_tags": [
+                    "enthalpy",
+                    "H",
+                    "state function"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "What is one type of calorimetry?",
+                "answers": [
+                    "bomb calorimetry",
+                    "plastic calorimetry",
+                    "wood calorimetry",
+                    "air calorimetry"
+                ],
+                "correct_answer": "0",
+                "meta_tags": [
+                    "calorimetry"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "What is the molar mass of hydrogen?",
+                "answers": [
+                    "0.01 grams",
+                    "0.1 grams",
+                    "1 gram",
+                    "10 grams",
+                    "100 grams",
+                    "1000 grams"
+                ],
+                "correct_answer": "2",
+                "meta_tags": [
+                    "hydrogen"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "What is the first law of thermodynamics?",
+                "answers": [
+                    "Conservation of mass",
+                    "Conservation of volume",
+                    "Conservation of energy"
+                ],
+                "correct_answer": "2",
+                "meta_tags": [
+                    "thermodynamics",
+                    "first law of thermodynamics"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "Is work a state function?",
+                "answers": [
+                    "Yes",
+                    "No"
+                ],
+                "correct_answer": "1",
+                "meta_tags": [
+                    "work",
+                    "w",
+                    "state function"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "What is the volume of a rectangular prism?",
+                "answers": [
+                    "length x width x height",
+                    "length x width",
+                    "length x height",
+                    "length x width x height x circumference"
+                ],
+                "correct_answer": "0",
+                "meta_tags": [
+                    "rectangular prism",
+                    "volume"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "What is the molar mass of tin?",
+                "answers": [
+                    "0.119 grams",
+                    "1.19 grams",
+                    "11.9 grams",
+                    "119 grams",
+                    "1190 grams"
+                ],
+                "correct_answer": "3",
+                "meta_tags": [
+                    "tin",
+                    "Sn"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "How do we solve for Gibbs' free energy?",
+                "answers": [
+                    "H - PV",
+                    "PV + TS",
+                    "q + PV",
+                    "TP + q",
+                    "q + TS",
+                    "H - TS"
+                ],
+                "correct_answer": "5",
+                "meta_tags": [
+                    "free energy",
+                    "Gibbs"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "Is free energy a state function?",
+                "answers": [
+                    "yes",
+                    "no"
+                ],
+                "correct_answer": "0",
+                "meta_tags": [
+                    "free energy",
+                    "Gibbs",
+                    "state function"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "What is the molar mass of one gram of titanium?",
+                "answers": [
+                    "4.8 grams",
+                    "48 grams",
+                    "480 grams",
+                    "4800 grams"
+                ],
+                "correct_answer": "1",
+                "meta_tags": [
+                    "titanium",
+                    "chemistry"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "What does the symbol Sb stand for?",
+                "answers": [
+                    "Antimony",
+                    "Selenium",
+                    "Sabenium",
+                    "Beryllium",
+                    "Tantaium"
+                ],
+                "correct_answer": "0",
+                "meta_tags": [
+                    "antimony"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "How do we solve for entropy?",
+                "answers": [
+                    "n/q",
+                    "V/P",
+                    "P/T",
+                    "q/T"
+                ],
+                "correct_answer": "3",
+                "meta_tags": [
+                    "entropy",
+                    "probability"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "Is entropy a state function?",
+                "answers": [
+                    "Yes",
+                    "No"
+                ],
+                "correct_answer": "0",
+                "meta_tags": [
+                    "entropy",
+                    "state function"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "How many protons does argon have?",
+                "answers": [
+                    "9",
+                    "18",
+                    "27",
+                    "36",
+                    "45",
+                    "54",
+                    "63"
+                ],
+                "correct_answer": "1",
+                "meta_tags": [
+                    "argon",
+                    "protons"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            }
+        ],
+        "id": "6"
+    },
+    {
         "title": "Space Quiz",
-        "description": "Space Quiz",
+        "description": "This is Justin He's Space Quiz. If you pass, you are worthy.",
         "meta_tags": [
             "Space",
             "Astrophysics",
@@ -568,12 +1245,12 @@
                     "50 millions years ago"
                 ],
                 "correct_answer": "1",
-                "global_correct": "17",
-                "global_total": "40",
                 "meta_tags": [
                     "Universe",
                     "Big Bang Theory"
-                ]
+                ],
+                "global_correct": "17",
+                "global_total": "40"
             },
             {
                 "text": "What is the nearest galaxy to the Milky Way?",
@@ -586,13 +1263,13 @@
                     "Casertada"
                 ],
                 "correct_answer": "2",
-                "global_correct": "21",
-                "global_total": "40",
                 "meta_tags": [
                     "galaxy",
                     "stars",
                     "andromeda"
-                ]
+                ],
+                "global_correct": "21",
+                "global_total": "40"
             },
             {
                 "text": "What is the name of the first successful U.S.A moon mission (that landed people on the moon)?",
@@ -604,13 +1281,13 @@
                     "Neptune 16"
                 ],
                 "correct_answer": "3",
-                "global_correct": "23",
-                "global_total": "40",
                 "meta_tags": [
                     "Apollo",
                     "Moon",
                     "Rocket"
-                ]
+                ],
+                "global_correct": "23",
+                "global_total": "40"
             },
             {
                 "text": "What is the name of the first robotic space probe to successfully land on a Comet?",
@@ -620,12 +1297,12 @@
                     "Stonk"
                 ],
                 "correct_answer": "0",
-                "global_correct": "25",
-                "global_total": "40",
                 "meta_tags": [
                     "Probe",
                     "Comet"
-                ]
+                ],
+                "global_correct": "25",
+                "global_total": "40"
             },
             {
                 "text": "What is the name of the recent space probe that has taken the highest quality pictures of Pluto to date?",
@@ -639,11 +1316,11 @@
                     "New Horizons"
                 ],
                 "correct_answer": "6",
-                "global_correct": "25",
-                "global_total": "40",
                 "meta_tags": [
                     "Pluto"
-                ]
+                ],
+                "global_correct": "25",
+                "global_total": "40"
             },
             {
                 "text": "How old is our Sun?",
@@ -654,12 +1331,12 @@
                     "4.5 billion years"
                 ],
                 "correct_answer": "3",
-                "global_correct": "26",
-                "global_total": "40",
                 "meta_tags": [
                     "Sun",
                     "Star"
-                ]
+                ],
+                "global_correct": "26",
+                "global_total": "40"
             },
             {
                 "text": "What is the number of years needed to complete one Halley's Comet cycle?",
@@ -670,12 +1347,12 @@
                     "34"
                 ],
                 "correct_answer": "1",
-                "global_correct": "19",
-                "global_total": "40",
                 "meta_tags": [
                     "Halley's Comet",
                     "Comet"
-                ]
+                ],
+                "global_correct": "19",
+                "global_total": "40"
             },
             {
                 "text": "What is the point of no return called in regards to light in a black hole?",
@@ -687,12 +1364,12 @@
                     "Takayushi's Line"
                 ],
                 "correct_answer": "2",
-                "global_correct": "14",
-                "global_total": "40",
                 "meta_tags": [
                     "Black Hole",
                     "Event Horizon"
-                ]
+                ],
+                "global_correct": "14",
+                "global_total": "40"
             },
             {
                 "text": "What is the size of the Milky Way? (light years across)",
@@ -704,14 +1381,14 @@
                     "351,000 Light Years"
                 ],
                 "correct_answer": "1",
-                "global_correct": "23",
-                "global_total": "40",
                 "meta_tags": [
                     "Milky Way"
-                ]
+                ],
+                "global_correct": "23",
+                "global_total": "40"
             },
             {
-                "text": "What is the most accurate description for the temperature of planet \"JustinHe\", located in galaxy \"Awesomeness?\"",
+                "text": "What is the most accurate description for the temperature of planet ",
                 "answers": [
                     "Super Cool",
                     "Moderate",
@@ -719,17 +1396,17 @@
                     "Absolute value of swag degrees"
                 ],
                 "correct_answer": "0",
-                "global_correct": "27",
-                "global_total": "40",
                 "meta_tags": [
                     "Planets",
                     "Suns"
-                ]
+                ],
+                "global_correct": "27",
+                "global_total": "40"
             }
-        ]
+        ],
+        "id": "7"
     },
     {
-        "id": 5,
         "title": "Physics Quiz",
         "description": "BEST QUIZ EVER",
         "meta_tags": [
@@ -743,7 +1420,7 @@
             "argentina",
             "math"
         ],
-        "diffifculty": "1-20",
+        "difficulty": "10",
         "questions": [
             {
                 "text": "1). What is Alastairs middle name?",
@@ -754,11 +1431,11 @@
                     "James"
                 ],
                 "correct_answer": "0",
-                "global_correct": 0,
-                "global_total": 1,
                 "meta_tags": [
                     "english"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "1"
             },
             {
                 "text": "2). What is 9 plus 10?",
@@ -770,11 +1447,11 @@
                     "394950495"
                 ],
                 "correct_answer": "0",
-                "global_correct": 0,
-                "global_total": 1,
                 "meta_tags": [
                     "addition"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "1"
             },
             {
                 "text": "3). What is Kerner's mom's maiden name?",
@@ -784,11 +1461,11 @@
                     "Katz"
                 ],
                 "correct_answer": "0",
-                "global_correct": 0,
-                "global_total": 1,
                 "meta_tags": [
                     "name"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "1"
             },
             {
                 "text": "4). What is Ivkov's middle name?",
@@ -800,11 +1477,11 @@
                     "Novak"
                 ],
                 "correct_answer": "0",
-                "global_correct": 0,
-                "global_total": 1,
                 "meta_tags": [
                     "argentina"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "1"
             },
             {
                 "text": "5). What is Armstrongs's middle name?",
@@ -816,11 +1493,11 @@
                     "Hayden"
                 ],
                 "correct_answer": "2",
-                "global_correct": 0,
-                "global_total": 1,
                 "meta_tags": [
                     "middlename"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "1"
             },
             {
                 "text": "6). What is Joon's favorite league champion?",
@@ -832,11 +1509,11 @@
                     "Fiora"
                 ],
                 "correct_answer": "3",
-                "global_correct": 0,
-                "global_total": 1,
                 "meta_tags": [
                     "leagueoflegends"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "1"
             },
             {
                 "text": "7). Most OP league champion?",
@@ -848,11 +1525,11 @@
                     "Leblanc"
                 ],
                 "correct_answer": "0",
-                "global_correct": 0,
-                "global_total": 1,
                 "meta_tags": [
                     "leagueoflegends"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "1"
             },
             {
                 "text": "8). What is Andrea's (matt's mom's) favorite sport?",
@@ -863,11 +1540,11 @@
                     "Skiing"
                 ],
                 "correct_answer": "0",
-                "global_correct": 0,
-                "global_total": 1,
                 "meta_tags": [
                     "sports"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "1"
             },
             {
                 "text": "9). What is Scott Armstrong's favorite book?",
@@ -879,11 +1556,11 @@
                     "Pelican Brief"
                 ],
                 "correct_answer": "1",
-                "global_correct": 0,
-                "global_total": 1,
                 "meta_tags": [
                     "books"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "1"
             },
             {
                 "text": "10). Who is Conor Yuen's best friend?",
@@ -895,16 +1572,16 @@
                     "Matt Armstrong"
                 ],
                 "correct_answer": "2",
-                "global_correct": 0,
-                "global_total": 1,
                 "meta_tags": [
                     "foreveralone"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "1"
             }
-        ]
+        ],
+        "id": "8"
     },
     {
-        "id": 6,
         "title": "LoTR Quiz",
         "description": "How well do you know your rings?",
         "meta_tags": [
@@ -916,7 +1593,7 @@
         "difficulty": "17",
         "questions": [
             {
-                "text": "Who said, \"Nine companions. So be it. You shall be the fellowship of the ring.\"?",
+                "text": "Who said, ",
                 "answers": [
                     "Elrond",
                     "Gandalf",
@@ -924,12 +1601,12 @@
                     "Celeborn",
                     "Saruman"
                 ],
-                "correct_answer": 0,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "0",
                 "meta_tags": [
                     "Rivendell"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "How many rings of power were forged?",
@@ -939,12 +1616,12 @@
                     "20",
                     "13"
                 ],
-                "correct_answer": 2,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "2",
                 "meta_tags": [
                     "Rings"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What gift does Galadriel give to Gimli in Lothlorien?",
@@ -955,12 +1632,12 @@
                     "A dagger",
                     "A vial of light"
                 ],
-                "correct_answer": 1,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "1",
                 "meta_tags": [
                     "Galadriel"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What was Gollum's name as a Hobbit?",
@@ -970,15 +1647,15 @@
                     "Smeagol",
                     "Tobold"
                 ],
-                "correct_answer": 2,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "2",
                 "meta_tags": [
                     "Gollum"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
-                "text": "Who said, \"I don't know half of you half as well as I should like, and I like less than half of you half as well as you deserve.\"?",
+                "text": "Who said, ",
                 "answers": [
                     "Gandalf",
                     "Merry",
@@ -986,12 +1663,12 @@
                     "Bilbo",
                     "Sauron"
                 ],
-                "correct_answer": 3,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "3",
                 "meta_tags": [
                     "The Shire"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "Who is Shelob",
@@ -1001,12 +1678,12 @@
                     "An elf queen",
                     "An Uruk-hai leader"
                 ],
-                "correct_answer": 1,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "1",
                 "meta_tags": [
                     "Mordor"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "Why can Arwen choose a mortal life?",
@@ -1016,12 +1693,12 @@
                     "All elves can choose a mortal life.",
                     "Her family has human ancestry"
                 ],
-                "correct_answer": 3,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "3",
                 "meta_tags": [
                     "Elves"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "Who leads Frodo and Sam to Buckelberry Ferry?",
@@ -1032,12 +1709,12 @@
                     "Bilbo",
                     "Arwen"
                 ],
-                "correct_answer": 0,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "0",
                 "meta_tags": [
                     "Frodo"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "Which Hobbit stabs the Witch King?",
@@ -1047,15 +1724,15 @@
                     "Merry",
                     "Sam"
                 ],
-                "correct_answer": 2,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "2",
                 "meta_tags": [
                     "Witch King"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
-                "text": "Who said, \"I would have followed you, my brother...my captain...my king\"?",
+                "text": "Who said, ",
                 "answers": [
                     "Legolas",
                     "Pippin",
@@ -1063,12 +1740,12 @@
                     "Boromir",
                     "Sam"
                 ],
-                "correct_answer": 3,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "3",
                 "meta_tags": [
                     "Gondor"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "Who rescues Gandalf atop Orthanc?",
@@ -1078,12 +1755,12 @@
                     "Gwaihir",
                     "Gothmog"
                 ],
-                "correct_answer": 2,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "2",
                 "meta_tags": [
                     "Orthanc"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "Who becomes Sam's wife?",
@@ -1094,12 +1771,12 @@
                     "Rosie Cotton",
                     "Daisy Baggins"
                 ],
-                "correct_answer": 3,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "3",
                 "meta_tags": [
                     "Sam"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What is Aragorn's horse's name?",
@@ -1109,15 +1786,15 @@
                     "Roheryn",
                     "Asfaloth"
                 ],
-                "correct_answer": 1,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "1",
                 "meta_tags": [
                     "Aragorn"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
-                "text": "Who said, \"I don't want to be in a battle, but waiting on the edge of one I can't escape is even worse.\"?",
+                "text": "Who said, ",
                 "answers": [
                     "Merry",
                     "Frodo",
@@ -1125,12 +1802,12 @@
                     "Pippin",
                     "Gimli"
                 ],
-                "correct_answer": 3,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "3",
                 "meta_tags": [
                     "Mordor"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "Who does Bilbo share his birthday with?",
@@ -1140,12 +1817,12 @@
                     "Frodo",
                     "Belladonna (Took) Baggins"
                 ],
-                "correct_answer": 2,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "2",
                 "meta_tags": [
                     "Bilbo"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What gift does Galadriel give to Aragorn?",
@@ -1156,27 +1833,27 @@
                     "The Light of Earendil",
                     "A dagger"
                 ],
-                "correct_answer": 1,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "1",
                 "meta_tags": [
                     "Galadriel"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
-                "text": "Who does Saruman nickname the \"Bird-whisperer\"?",
+                "text": "Who does Saruman nickname the ",
                 "answers": [
                     "Radagast",
                     "Gandalf",
                     "Legolas",
                     "Sam"
                 ],
-                "correct_answer": 0,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "0",
                 "meta_tags": [
                     "Saruman"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "Who stabs Saruman?",
@@ -1187,27 +1864,27 @@
                     "Wormtongue",
                     "Legolas"
                 ],
-                "correct_answer": 3,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "3",
                 "meta_tags": [
                     "Saruman"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
-                "text": "Who said, \"One small bite is enough to fill the stomach of a grown man!\"?",
+                "text": "Who said, ",
                 "answers": [
                     "Aragorn",
                     "Borimir",
                     "Legolas",
                     "Faramir"
                 ],
-                "correct_answer": 2,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "2",
                 "meta_tags": [
                     "Bread"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "For Hobbits, what meal comes after elevensies?",
@@ -1218,21 +1895,21 @@
                     "Supper",
                     "Second breakfast"
                 ],
-                "correct_answer": 2,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "2",
                 "meta_tags": [
                     "Lunch"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             }
-        ]
+        ],
+        "id": "9"
     },
     {
-        "id": 7,
         "title": "Can you guess who said it?",
         "description": "Quiz by Nathalie Young",
-        "difficulty": 10,
-        "meta_tags": "",
+        "meta_tags": "Nice",
+        "difficulty": "10",
         "questions": [
             {
                 "text": "Happiness in not something ready made. It comes from your own actions",
@@ -1242,13 +1919,13 @@
                     "Dr. Seuss",
                     "Confucius"
                 ],
-                "correct_answer": 1,
-                "global_correct": 6,
-                "global_total": 41,
+                "correct_answer": "1",
                 "meta_tags": [
                     "greeneggsandham",
                     "yellowsmileyface"
-                ]
+                ],
+                "global_correct": "6",
+                "global_total": "41"
             },
             {
                 "text": "Anytime I feel lost, I pull out a map and stare. I stare until I have reminded myself that life is a giant adventure, so much to do, to see",
@@ -1257,13 +1934,13 @@
                     "Aesop",
                     "Coco Chanel"
                 ],
-                "correct_answer": 0,
-                "global_correct": 6,
-                "global_total": 41,
+                "correct_answer": "0",
                 "meta_tags": [
                     "maps",
                     "oldmaps"
-                ]
+                ],
+                "global_correct": "6",
+                "global_total": "41"
             },
             {
                 "text": "Common sense is not so common",
@@ -1274,13 +1951,13 @@
                     "Napolean",
                     "Voltaire"
                 ],
-                "correct_answer": 4,
-                "global_correct": 18,
-                "global_total": 41,
+                "correct_answer": "4",
                 "meta_tags": [
                     "michaeljordan",
                     "napoleanportrait"
-                ]
+                ],
+                "global_correct": "18",
+                "global_total": "41"
             },
             {
                 "text": "The best thing to hold onto in life is each other",
@@ -1289,14 +1966,14 @@
                     "Audrey Hepburn",
                     "Bob Marley"
                 ],
-                "correct_answer": 1,
-                "global_correct": 10,
-                "global_total": 41,
+                "correct_answer": "1",
                 "meta_tags": [
                     "holdinghands",
                     "buddha",
                     "audreyhepburn"
-                ]
+                ],
+                "global_correct": "10",
+                "global_total": "41"
             },
             {
                 "text": "You have to learn the rules of the game. And then you have to play better than anyone else",
@@ -1304,14 +1981,14 @@
                     "Asap Rocky",
                     "Albert Einstein"
                 ],
-                "correct_answer": 1,
-                "global_correct": 31,
-                "global_total": 41,
+                "correct_answer": "1",
                 "meta_tags": [
                     "asaprocky",
                     "chessboard",
                     "alberteinstein"
-                ]
+                ],
+                "global_correct": "31",
+                "global_total": "41"
             },
             {
                 "text": "Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment",
@@ -1321,13 +1998,13 @@
                     "Friedrich Nietsche",
                     "J.R.R. Tolkien"
                 ],
-                "correct_answer": 0,
-                "global_correct": 7,
-                "global_total": 41,
+                "correct_answer": "0",
                 "meta_tags": [
                     "penandscroll",
                     "FriedrichNietsche"
-                ]
+                ],
+                "global_correct": "7",
+                "global_total": "41"
             },
             {
                 "text": "What about love? What about love",
@@ -1337,13 +2014,13 @@
                     "The Weeknd",
                     "Donald Trump"
                 ],
-                "correct_answer": 2,
-                "global_correct": 13,
-                "global_total": 41,
+                "correct_answer": "2",
                 "meta_tags": [
                     "cartoonheart",
                     "donaldtrump"
-                ]
+                ],
+                "global_correct": "13",
+                "global_total": "41"
             },
             {
                 "text": "Have you finished your homework",
@@ -1353,13 +2030,13 @@
                     "Woody Young",
                     "Arlette Haywood"
                 ],
-                "correct_answer": 0,
-                "global_correct": 14,
-                "global_total": 41,
+                "correct_answer": "0",
                 "meta_tags": [
                     "homework",
                     "textbooks"
-                ]
+                ],
+                "global_correct": "14",
+                "global_total": "41"
             },
             {
                 "text": "Be as you wish to seem",
@@ -1369,13 +2046,13 @@
                     "Mahatma Gandi",
                     "Socrates"
                 ],
-                "correct_answer": 3,
-                "global_correct": 23,
-                "global_total": 41,
+                "correct_answer": "3",
                 "meta_tags": [
                     "plato",
                     "socrates"
-                ]
+                ],
+                "global_correct": "23",
+                "global_total": "41"
             },
             {
                 "text": "I believe there's a god above me, I'm just the god of everything else",
@@ -1384,14 +2061,14 @@
                     "Kanye West",
                     "Pusha T"
                 ],
-                "correct_answer": 2,
-                "global_correct": 26,
-                "global_total": 41,
+                "correct_answer": "2",
                 "meta_tags": [
                     "praying",
                     "sky",
                     "god"
-                ]
+                ],
+                "global_correct": "26",
+                "global_total": "41"
             },
             {
                 "text": "I'm not a businessman, I'm a business, man",
@@ -1400,13 +2077,13 @@
                     "Kanye West",
                     "Pusha T"
                 ],
-                "correct_answer": 0,
-                "global_correct": 10,
-                "global_total": 41,
+                "correct_answer": "0",
                 "meta_tags": [
                     "businessman",
                     "jayz"
-                ]
+                ],
+                "global_correct": "10",
+                "global_total": "41"
             },
             {
                 "text": "I love the name of honor, more than I fear death",
@@ -1414,171 +2091,272 @@
                     "Julius Caesar",
                     "John Adams"
                 ],
-                "correct_answer": 0,
-                "global_correct": 16,
-                "global_total": 41,
+                "correct_answer": "0",
                 "meta_tags": [
                     "honor",
                     "death",
                     "juliuscaesar"
-                ]
+                ],
+                "global_correct": "16",
+                "global_total": "41"
             }
         ],
-        "highscores": [
-            {
-                "name": "Nathalie Young",
-                "score": 12,
-                "date": "10/5/2015"
-            },
-            {
-                "name": "natnat",
-                "score": 11,
-                "date": "10/4/2015"
-            },
-            {
-                "name": "nathhhh",
-                "score": "11",
-                "date": "10/4/2015"
-            }
-        ]
+        "id": "10"
     },
     {
-        "title": "A Quiz on History",
-        "description": "Napoleon, Washington, and other notable leadership eras",
+        "title": "Treasure Hunt Hard",
+        "description": "Do not try this quiz if you have a fear of failing",
         "meta_tags": [
-            "presidents"
+            "extremely_difficult",
+            "not_for_the_faint_of_heart"
         ],
-        "difficulty": "10",
+        "difficulty": "19",
         "questions": [
             {
-                "text": "Where did Napoleon lose, for the final time?",
+                "text": "The Recited Container Of Looks",
                 "answers": [
-                    "Waterloo",
-                    "Gettysburg",
-                    "Paris",
-                    "Berlin"
+                    "The Pool",
+                    "The Swamp",
+                    "The Turf",
+                    "The Red Stair Case"
                 ],
-                "correct_answer": "0",
+                "correct_answer": "3",
                 "meta_tags": [
-                    "Battles"
+                    "red"
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "What famous dessert is named after Napoleon?",
+                "text": "The Fish was trying to say ",
                 "answers": [
-                    "Napoleon's Cake",
-                    "Napoleon's Fudge",
-                    "Napoleon's Banana Split",
-                    "TriNapoleon"
+                    "The Basement Theater",
+                    "The Library",
+                    "The Computer Lab",
+                    "The 1709 Room"
                 ],
                 "correct_answer": "0",
                 "meta_tags": [
-                    "Dessert"
+                    "theater"
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "How many slaves did George Washington own?",
+                "text": "escort escort escort escort escort escort escort escort escort escort",
                 "answers": [
-                    "10",
-                    "50",
-                    "100+"
+                    "The Morse Theater",
+                    "The Weight Room",
+                    "The Lower Gym",
+                    "The Tennis Courts"
+                ],
+                "correct_answer": "3",
+                "meta_tags": [
+                    "tennis"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "Are you going to answer this question correctly?",
+                "answers": [
+                    "yes",
+                    "no"
+                ],
+                "correct_answer": "0",
+                "meta_tags": [
+                    "logic"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "1500 Paper Dispenser",
+                "answers": [
+                    "The Balcony",
+                    "Ms. Keigher's Office",
+                    "The 3D Printer",
+                    "The Orange Stair Case"
                 ],
                 "correct_answer": "2",
                 "meta_tags": [
-                    "slaves"
+                    "rome"
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "",
+                "text": "Where Change is Inevitable",
                 "answers": [
-                    ""
+                    "The Brass",
+                    "The Lower School Kitchen",
+                    "The Tennis Courts",
+                    "The Locker Room"
                 ],
-                "correct_answer": "",
+                "correct_answer": "3",
                 "meta_tags": [
-                    ""
+                    "locker"
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "",
+                "text": "Who's There",
                 "answers": [
-                    ""
+                    "The Pool",
+                    "The Swamp",
+                    "First Base on the Turf",
+                    "The Red Stair Case",
+                    "The Blue Stair Case",
+                    "The Cafeteria"
                 ],
-                "correct_answer": "",
+                "correct_answer": "2",
                 "meta_tags": [
-                    ""
+                    "baseball"
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "",
+                "text": "When Jesus Subs for his Mom he's...",
                 "answers": [
-                    ""
+                    "The Pool",
+                    "The Swamp",
+                    "The Turf",
+                    "The Red Stair Case",
+                    "The Nurses Office"
                 ],
-                "correct_answer": "",
+                "correct_answer": "4",
                 "meta_tags": [
-                    ""
+                    "hospital"
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "",
+                "text": "5:09 PM",
                 "answers": [
-                    ""
+                    "The 1709 Room",
+                    "The Brass",
+                    "The Ceramics Room"
                 ],
-                "correct_answer": "",
+                "correct_answer": "0",
                 "meta_tags": [
-                    ""
+                    "military"
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "",
+                "text": "What Lines of Six Dollars would Form",
                 "answers": [
-                    ""
+                    "The Morse",
+                    "The Pool",
+                    "The Blue Stair Case",
+                    "The Computer Lab"
                 ],
-                "correct_answer": "",
+                "correct_answer": "1",
                 "meta_tags": [
-                    ""
+                    "pool"
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             },
             {
-                "text": "",
+                "text": "The Price of Cutlery after Dusk",
                 "answers": [
-                    ""
+                    "Ms. Bagby's Office",
+                    "The 1709 Room",
+                    "The Brass",
+                    "The Photography Room",
+                    "The English Hallway"
                 ],
-                "correct_answer": "",
+                "correct_answer": "3",
                 "meta_tags": [
-                    ""
-                ],
-                "global_correct": "0",
-                "global_total": "0"
-            },
-            {
-                "text": "",
-                "answers": [
-                    ""
-                ],
-                "correct_answer": "",
-                "meta_tags": [
-                    ""
+                    "silver"
                 ],
                 "global_correct": "0",
                 "global_total": "0"
             }
         ],
-        "id": 8
+        "id": "11"
+    },
+    {
+        "title": "A Quiz on Life: Made using the MakeYourQuiz Function",
+        "description": "A Biology exam! Made using the \"Make Your Quiz\" Function.",
+        "meta_tags": [
+            "Biology",
+            "Cells"
+        ],
+        "difficulty": "5",
+        "questions": [
+            {
+                "text": "What is the gene that is very well studied and is known for its tumor-inhibiting presence?",
+                "answers": [
+                    "P51",
+                    "P52",
+                    "P53"
+                ],
+                "correct_answer": "2",
+                "meta_tags": [
+                    "Gene",
+                    "Cells"
+                ],
+                "global_correct": "1",
+                "global_total": "1"
+            },
+            {
+                "text": "What is the nucleic acid molecule responsible for unzipping genes during transcription?",
+                "answers": [
+                    "Polymerase",
+                    "Tihalase",
+                    "Phosphatase",
+                    "Helicase"
+                ],
+                "correct_answer": "3",
+                "meta_tags": [
+                    "Biology",
+                    "Genes",
+                    "DNA"
+                ],
+                "global_correct": "1",
+                "global_total": "1"
+            },
+            {
+                "text": "Who is the woman who discovered DNA structure through X-ray diffraction in the early 20th century, but was overshadowed by male peers due to existing sexism?",
+                "answers": [
+                    "Marie Curie",
+                    "Rosalind Franklin",
+                    "Catherine Kirk",
+                    "Marie Nye"
+                ],
+                "correct_answer": "1",
+                "meta_tags": [
+                    "X-ray",
+                    "DNA",
+                    "Rosalind Franklin"
+                ],
+                "global_correct": "1",
+                "global_total": "1"
+            },
+            {
+                "text": "How many nucleic bases are there in DNA and RNA?",
+                "answers": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ],
+                "correct_answer": "4",
+                "meta_tags": [
+                    "DNA",
+                    "nucleic acids"
+                ],
+                "global_correct": "1",
+                "global_total": "1"
+            }
+        ],
+        "id": "12"
     }
 ]
