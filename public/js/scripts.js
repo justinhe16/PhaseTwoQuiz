@@ -233,9 +233,21 @@ $("#imagetoggle").click(function() {
     $("#container").on("click", "#editquizbutton", function() { //the submit button for the quiz creation process.
         var editquizformdata = $("form#editquiz").serializeObject();
         console.log(editquizformdata);
+        if (editquizformdata.questions.length <= quizedit.questions.length){
         for (var d = 0; d < editquizformdata.questions.length; d++){ // i do this to fill in the missing parts of the json!
             editquizformdata.questions[d].global_correct = quizedit.questions[d].global_correct;
             editquizformdata.questions[d].global_total = quizedit.questions[d].global_total;
+            }
+        }
+        else {
+        for (var g = 0; g < quizedit.questions.length; g++){
+            editquizformdata.questions[g].global_correct = quizedit.questions[g].global_correct;
+            editquizformdata.questions[g].global_total = quizedit.questions[g].global_total;
+            }
+        for (var p = g+1; p < editquizformdata.questions.length; p++){
+            editquizformdata.questions[p].global_correct = 0;
+            editquizformdata.questions[p].global_total = 0;
+        }
         }
         editquizformdata.id = quizedit.id;
         $.ajax({

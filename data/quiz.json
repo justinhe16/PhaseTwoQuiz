@@ -881,7 +881,6 @@
         ]
     },
     {
-        "id": 6,
         "title": "Chemistry Quiz",
         "description": "Test your chemistry knowledge!",
         "meta_tags": [
@@ -894,20 +893,20 @@
             {
                 "text": "What is the specific heat of water?",
                 "answers": [
-                    "4.18 J/g&deg;C",
-                    "5.18 J/g&deg;C",
-                    "40.56 J/g&deg;C",
-                    "20.56 J/g&deg;C",
-                    "-2.56 J/g&deg;C"
+                    "4.18 J/g°C",
+                    "5.18 J/g°C",
+                    "40.56 J/g°C",
+                    "20.56 J/g°C",
+                    "-2.56 J/g°C"
                 ],
-                "correct_answer": 0,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "0",
                 "meta_tags": [
                     "specific heat",
                     "water",
                     "heat capacity"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What is the molar mass of iron?",
@@ -917,13 +916,13 @@
                     " 56 grams",
                     "560 grams"
                 ],
-                "correct_answer": 2,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "2",
                 "meta_tags": [
                     "iron",
                     "protons"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What does the symbol Au stand for?",
@@ -934,29 +933,29 @@
                     "arsenic",
                     "actinium"
                 ],
-                "correct_answer": 2,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "2",
                 "meta_tags": [
                     "gold",
                     "chemistry"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "How can we solve for change in internal energy?",
                 "answers": [
-                    "mC&#916;T",
-                    "P&#916;V",
+                    "mCΔT",
+                    "PΔV",
                     "q/T",
                     "q + w"
                 ],
-                "correct_answer": 3,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "3",
                 "meta_tags": [
                     "internal energy",
                     "energy"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What is one type of calorimetry?",
@@ -965,12 +964,12 @@
                     "coffee cup calorimetry",
                     "styrofoam calorimetry"
                 ],
-                "correct_answer": 1,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "1",
                 "meta_tags": [
                     "calorimetry"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What is the ideal gas law?",
@@ -982,13 +981,13 @@
                     "V=nRPT",
                     "n=PVRT"
                 ],
-                "correct_answer": 1,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "1",
                 "meta_tags": [
                     "ideal gas law",
                     "gas"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "Is enthalpy a state function?",
@@ -996,14 +995,14 @@
                     "Yes",
                     "No"
                 ],
-                "correct_answer": 0,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "0",
                 "meta_tags": [
                     "enthalpy",
                     "H",
                     "state function"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What is one type of calorimetry?",
@@ -1013,12 +1012,12 @@
                     "wood calorimetry",
                     "air calorimetry"
                 ],
-                "correct_answer": 0,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "0",
                 "meta_tags": [
                     "calorimetry"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What is the molar mass of hydrogen?",
@@ -1030,12 +1029,12 @@
                     "100 grams",
                     "1000 grams"
                 ],
-                "correct_answer": 2,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "2",
                 "meta_tags": [
                     "hydrogen"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What is the first law of thermodynamics?",
@@ -1044,13 +1043,13 @@
                     "Conservation of volume",
                     "Conservation of energy"
                 ],
-                "correct_answer": 2,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "2",
                 "meta_tags": [
                     "thermodynamics",
                     "first law of thermodynamics"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "Is work a state function?",
@@ -1058,14 +1057,14 @@
                     "Yes",
                     "No"
                 ],
-                "correct_answer": 1,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "1",
                 "meta_tags": [
                     "work",
                     "w",
                     "state function"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What is the volume of a rectangular prism?",
@@ -1075,13 +1074,13 @@
                     "length x height",
                     "length x width x height x circumference"
                 ],
-                "correct_answer": 0,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "0",
                 "meta_tags": [
                     "rectangular prism",
                     "volume"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What is the molar mass of tin?",
@@ -1092,13 +1091,13 @@
                     "119 grams",
                     "1190 grams"
                 ],
-                "correct_answer": 3,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "3",
                 "meta_tags": [
                     "tin",
                     "Sn"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "How do we solve for Gibbs' free energy?",
@@ -1110,13 +1109,13 @@
                     "q + TS",
                     "H - TS"
                 ],
-                "correct_answer": 5,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "5",
                 "meta_tags": [
                     "free energy",
                     "Gibbs"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "Is free energy a state function?",
@@ -1124,14 +1123,14 @@
                     "yes",
                     "no"
                 ],
-                "correct_answer": 0,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "0",
                 "meta_tags": [
                     "free energy",
                     "Gibbs",
                     "state function"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What is the molar mass of one gram of titanium?",
@@ -1141,13 +1140,13 @@
                     "480 grams",
                     "4800 grams"
                 ],
-                "correct_answer": 1,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "1",
                 "meta_tags": [
                     "titanium",
                     "chemistry"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "What does the symbol Sb stand for?",
@@ -1158,12 +1157,12 @@
                     "Beryllium",
                     "Tantaium"
                 ],
-                "correct_answer": 0,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "0",
                 "meta_tags": [
                     "antimony"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "How do we solve for entropy?",
@@ -1173,13 +1172,13 @@
                     "P/T",
                     "q/T"
                 ],
-                "correct_answer": 3,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "3",
                 "meta_tags": [
                     "entropy",
                     "probability"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "Is entropy a state function?",
@@ -1187,13 +1186,13 @@
                     "Yes",
                     "No"
                 ],
-                "correct_answer": 0,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "0",
                 "meta_tags": [
                     "entropy",
                     "state function"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             },
             {
                 "text": "How many protons does argon have?",
@@ -1206,15 +1205,16 @@
                     "54",
                     "63"
                 ],
-                "correct_answer": 1,
-                "global_correct": 0,
-                "global_total": 0,
+                "correct_answer": "1",
                 "meta_tags": [
                     "argon",
                     "protons"
-                ]
+                ],
+                "global_correct": "0",
+                "global_total": "0"
             }
-        ]
+        ],
+        "id": "6"
     },
     {
         "id": "7",
@@ -2815,5 +2815,137 @@
             }
         ],
         "id": 15
+    },
+    {
+        "title": "Conor stinks!",
+        "description": "falafael",
+        "meta_tags": "dogs",
+        "difficulty": "15",
+        "questions": [
+            {
+                "text": "What is my name?",
+                "answers": [
+                    "Conor",
+                    "Justin"
+                ],
+                "correct_answer": "0",
+                "meta_tags": [
+                    "carrots"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "What is Matt's dog's name?",
+                "answers": [
+                    "Amanda",
+                    "Watch",
+                    "Panda"
+                ],
+                "correct_answer": "2",
+                "meta_tags": [
+                    "Panda"
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "",
+                "answers": [
+                    ""
+                ],
+                "correct_answer": "",
+                "meta_tags": [
+                    ""
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "",
+                "answers": [
+                    ""
+                ],
+                "correct_answer": "",
+                "meta_tags": [
+                    ""
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "",
+                "answers": [
+                    ""
+                ],
+                "correct_answer": "",
+                "meta_tags": [
+                    ""
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "",
+                "answers": [
+                    ""
+                ],
+                "correct_answer": "",
+                "meta_tags": [
+                    ""
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "",
+                "answers": [
+                    ""
+                ],
+                "correct_answer": "",
+                "meta_tags": [
+                    ""
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "",
+                "answers": [
+                    ""
+                ],
+                "correct_answer": "",
+                "meta_tags": [
+                    ""
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "",
+                "answers": [
+                    ""
+                ],
+                "correct_answer": "",
+                "meta_tags": [
+                    ""
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            },
+            {
+                "text": "",
+                "answers": [
+                    ""
+                ],
+                "correct_answer": "",
+                "meta_tags": [
+                    ""
+                ],
+                "global_correct": "0",
+                "global_total": "0"
+            }
+        ],
+        "id": "16"
     }
 ]
